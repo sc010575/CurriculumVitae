@@ -14,7 +14,7 @@ struct Constant {
     static var baseURL: URL? {
         
         if isUITest || isUnitTest {
-            return URL(string: "http://localhost:8088")
+            return URL(string: "http://localhost:8088/gists")
         }
         
         return URL(string: "https://api.github.com/gists")

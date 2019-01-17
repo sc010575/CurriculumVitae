@@ -25,22 +25,22 @@ class MockServer {
     }
     
     @discardableResult
-    func respondToMovieLists(fixture: String = "movie", statusCode: Int = 200)  -> MockServer {
+    func respondToGists(fixture: String = "gistResponse", statusCode: Int = 200)  -> MockServer {
         let responseData = dataFromFixture(fixture)
         
-        addResponse(method: "GET", path: "/movie/popular", responseData: responseData!, statusCode: statusCode)
+        addResponse(method: "GET", path: "/gists/feb733f8c6d6c38b9db4208fb7791567", responseData: responseData!, statusCode: statusCode)
         
         return self
     }
     
-    @discardableResult
-    func respondToMovieDetails(fixture: String = "movieDetail", statusCode: Int = 200)  -> MockServer {
-        let responseData = dataFromFixture(fixture)
-        
-        addResponse(method: "GET", path: "/movie/297802", responseData: responseData!, statusCode: statusCode)
-        
-        return self
-    }
+//    @discardableResult
+//    func respondToMovieDetails(fixture: String = "movieDetail", statusCode: Int = 200)  -> MockServer {
+//        let responseData = dataFromFixture(fixture)
+//        
+//        addResponse(method: "GET", path: "/movie/297802", responseData: responseData!, statusCode: statusCode)
+//
+//        return self
+//    }
 }
 
 

@@ -1,0 +1,112 @@
+{
+    "url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567",
+    "forks_url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567/forks",
+    "commits_url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567/commits",
+    "id": "feb733f8c6d6c38b9db4208fb7791567",
+    "node_id": "MDQ6R2lzdGZlYjczM2Y4YzZkNmMzOGI5ZGI0MjA4ZmI3NzkxNTY3",
+    "git_pull_url": "https://gist.github.com/feb733f8c6d6c38b9db4208fb7791567.git",
+    "git_push_url": "https://gist.github.com/feb733f8c6d6c38b9db4208fb7791567.git",
+    "html_url": "https://gist.github.com/feb733f8c6d6c38b9db4208fb7791567",
+    "files": {
+        "CurriculumVitae": {
+            "filename": "CurriculumVitae",
+            "type": "text/plain",
+            "language": null,
+            "raw_url": "https://gist.githubusercontent.com/sc010575/feb733f8c6d6c38b9db4208fb7791567/raw/75228d855b7c9069645ef8e1271aded319bc53c4/CurriculumVitae",
+            "size": 1948,
+            "truncated": false,
+            "content": "{\n    \"profile_image\": \"https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg\",\n    \"name\": \"Suman Chatterjee\",\n    \"address\": \"131 West Plaza, Townlane , Stanwell, Staines-Upon-Thames, TW19 7FH\",\n    \"nationality\": \"British\",\n    \"profile\" : \"Senior iOS Developer more than 19 years of software development experience. Skills included strong knowledge of iOS, Objective-C, Swift, C/C++, Agile development approach, Object-Oriented Analysis and Design, Object Oriented Programming, software integration and Product development.\",\n    \"phone\": \"+447856518020\",\n    \"results\": [\n        {\n            \"company\": \"Sainsbury's\",\n            \"icon\": \"https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg\",\n            \"start_date\": \"2018-10-03\",\n            \"end_date\":\"2018-10-03\",\n            \"overview\": \"Eddie Brock is a reporter—investigating people who want to go unnoticed. But after he makes a terrible discovery at the Life Foundation, he begins to transform into ‘Venom’.  The Foundation has discovered creatures called symbiotes, and believes they’re the key to the next step in human evolution. Unwittingly bonded with one, Eddie discovers he has incredible new abilities—and a voice in his head that’s telling him to embrace the darkness.\"\n        },\n        {\n            \"company\": \"Nectar\",\n            \"icon\": \"https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg\",\n            \"start_date\": \"2018-10-03\",\n            \"end_date\":\"2018-10-03\",\n            \"overview\": \"Eddie Brock is a reporter—investigating people who want to go unnoticed. But after he makes a terrible discovery at the Life Foundation, he begins to transform into ‘Venom’.  The Foundation has discovered creatures called symbiotes, and believes they’re the key to the next step in human evolution. Unwittingly bonded with one, Eddie discovers he has incredible new abilities—and a voice in his head that’s telling him to embrace the darkness.\"\n        }\n\n    ]\n}"
+        }
+    },
+    "public": true,
+    "created_at": "2019-01-16T14:43:30Z",
+    "updated_at": "2019-01-16T14:45:21Z",
+    "description": "",
+    "comments": 1,
+    "user": null,
+    "comments_url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567/comments",
+    "owner": {
+        "login": "sc010575",
+        "id": 1453658,
+        "node_id": "MDQ6VXNlcjE0NTM2NTg=",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1453658?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sc010575",
+        "html_url": "https://github.com/sc010575",
+        "followers_url": "https://api.github.com/users/sc010575/followers",
+        "following_url": "https://api.github.com/users/sc010575/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sc010575/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sc010575/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sc010575/subscriptions",
+        "organizations_url": "https://api.github.com/users/sc010575/orgs",
+        "repos_url": "https://api.github.com/users/sc010575/repos",
+        "events_url": "https://api.github.com/users/sc010575/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sc010575/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "forks": [],
+    "history": [
+        {
+            "user": {
+                "login": "sc010575",
+                "id": 1453658,
+                "node_id": "MDQ6VXNlcjE0NTM2NTg=",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/1453658?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/sc010575",
+                "html_url": "https://github.com/sc010575",
+                "followers_url": "https://api.github.com/users/sc010575/followers",
+                "following_url": "https://api.github.com/users/sc010575/following{/other_user}",
+                "gists_url": "https://api.github.com/users/sc010575/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/sc010575/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/sc010575/subscriptions",
+                "organizations_url": "https://api.github.com/users/sc010575/orgs",
+                "repos_url": "https://api.github.com/users/sc010575/repos",
+                "events_url": "https://api.github.com/users/sc010575/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/sc010575/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "version": "32af151e97de0250b5e7dc9b86b124c6b5f479c1",
+            "committed_at": "2019-01-16T14:45:20Z",
+            "change_status": {
+                "total": 0,
+                "additions": 0,
+                "deletions": 0
+            },
+            "url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567/32af151e97de0250b5e7dc9b86b124c6b5f479c1"
+        },
+        {
+            "user": {
+                "login": "sc010575",
+                "id": 1453658,
+                "node_id": "MDQ6VXNlcjE0NTM2NTg=",
+                "avatar_url": "https://avatars1.githubusercontent.com/u/1453658?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/sc010575",
+                "html_url": "https://github.com/sc010575",
+                "followers_url": "https://api.github.com/users/sc010575/followers",
+                "following_url": "https://api.github.com/users/sc010575/following{/other_user}",
+                "gists_url": "https://api.github.com/users/sc010575/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/sc010575/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/sc010575/subscriptions",
+                "organizations_url": "https://api.github.com/users/sc010575/orgs",
+                "repos_url": "https://api.github.com/users/sc010575/repos",
+                "events_url": "https://api.github.com/users/sc010575/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/sc010575/received_events",
+                "type": "User",
+                "site_admin": false
+            },
+            "version": "a6d01a9cb3ff0b158392809a3c67eddfee033482",
+            "committed_at": "2019-01-16T14:43:30Z",
+            "change_status": {
+                "total": 25,
+                "additions": 25,
+                "deletions": 0
+            },
+            "url": "https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567/a6d01a9cb3ff0b158392809a3c67eddfee033482"
+        }
+    ],
+    "truncated": false
+}
