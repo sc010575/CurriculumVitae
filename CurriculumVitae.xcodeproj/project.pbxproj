@@ -13,6 +13,14 @@
 		C5281F3321F101A000BAD5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5281F3221F101A000BAD5B0 /* Assets.xcassets */; };
 		C5281F3621F101A000BAD5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F3421F101A000BAD5B0 /* LaunchScreen.storyboard */; };
 		C5281F4121F101A000BAD5B0 /* CurriculumVitaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */; };
+		C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F4E21F1117E00BAD5B0 /* CurriculumVitae.swift */; };
+		C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5021F1120400BAD5B0 /* GistMain.swift */; };
+		C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5321F1126500BAD5B0 /* Serialize.swift */; };
+		C5281F5B21F113F900BAD5B0 /* curriculumvitae.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281F5621F113F900BAD5B0 /* curriculumvitae.json */; };
+		C5281F5C21F113F900BAD5B0 /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5821F113F900BAD5B0 /* MockServer.swift */; };
+		C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5A21F113F900BAD5B0 /* Fixtures.swift */; };
+		C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5F21F11F8700BAD5B0 /* GistApiController.swift */; };
+		C5281F6221F1202E00BAD5B0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F6121F1202E00BAD5B0 /* Constant.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +52,14 @@
 		C5281F3C21F101A000BAD5B0 /* CurriculumVitaeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumVitaeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitaeTests.swift; sourceTree = "<group>"; };
 		C5281F4221F101A000BAD5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5281F4E21F1117E00BAD5B0 /* CurriculumVitae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitae.swift; sourceTree = "<group>"; };
+		C5281F5021F1120400BAD5B0 /* GistMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistMain.swift; sourceTree = "<group>"; };
+		C5281F5321F1126500BAD5B0 /* Serialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
+		C5281F5621F113F900BAD5B0 /* curriculumvitae.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = curriculumvitae.json; sourceTree = "<group>"; };
+		C5281F5821F113F900BAD5B0 /* MockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
+		C5281F5A21F113F900BAD5B0 /* Fixtures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		C5281F5F21F11F8700BAD5B0 /* GistApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistApiController.swift; sourceTree = "<group>"; };
+		C5281F6121F1202E00BAD5B0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +125,12 @@
 		C5281F2A21F1019E00BAD5B0 /* CurriculumVitae */ = {
 			isa = PBXGroup;
 			children = (
-				C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */,
-				C5281F2D21F1019E00BAD5B0 /* ViewController.swift */,
-				C5281F2F21F1019E00BAD5B0 /* Main.storyboard */,
-				C5281F3221F101A000BAD5B0 /* Assets.xcassets */,
-				C5281F3421F101A000BAD5B0 /* LaunchScreen.storyboard */,
 				C5281F3721F101A000BAD5B0 /* Info.plist */,
+				C5281F5221F1123C00BAD5B0 /* Helper */,
+				C5281F5E21F11F4000BAD5B0 /* Network Layer */,
+				C5281F4D21F1111200BAD5B0 /* Presentation Layer */,
+				C5281F4C21F110C100BAD5B0 /* Model Layer */,
+				C5281F4B21F1109000BAD5B0 /* App Infrastructure */,
 			);
 			path = CurriculumVitae;
 			sourceTree = "<group>";
@@ -122,10 +138,82 @@
 		C5281F3F21F101A000BAD5B0 /* CurriculumVitaeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5281F5921F113F900BAD5B0 /* Fixture */,
+				C5281F5721F113F900BAD5B0 /* MockServer */,
+				C5281F5521F113F900BAD5B0 /* Resources */,
 				C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */,
 				C5281F4221F101A000BAD5B0 /* Info.plist */,
 			);
 			path = CurriculumVitaeTests;
+			sourceTree = "<group>";
+		};
+		C5281F4B21F1109000BAD5B0 /* App Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F6121F1202E00BAD5B0 /* Constant.swift */,
+				C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */,
+				C5281F3221F101A000BAD5B0 /* Assets.xcassets */,
+				C5281F3421F101A000BAD5B0 /* LaunchScreen.storyboard */,
+			);
+			path = "App Infrastructure";
+			sourceTree = "<group>";
+		};
+		C5281F4C21F110C100BAD5B0 /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F4E21F1117E00BAD5B0 /* CurriculumVitae.swift */,
+				C5281F5021F1120400BAD5B0 /* GistMain.swift */,
+			);
+			path = "Model Layer";
+			sourceTree = "<group>";
+		};
+		C5281F4D21F1111200BAD5B0 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F2F21F1019E00BAD5B0 /* Main.storyboard */,
+				C5281F2D21F1019E00BAD5B0 /* ViewController.swift */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		C5281F5221F1123C00BAD5B0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F5321F1126500BAD5B0 /* Serialize.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C5281F5521F113F900BAD5B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F5621F113F900BAD5B0 /* curriculumvitae.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5281F5721F113F900BAD5B0 /* MockServer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F5821F113F900BAD5B0 /* MockServer.swift */,
+			);
+			path = MockServer;
+			sourceTree = "<group>";
+		};
+		C5281F5921F113F900BAD5B0 /* Fixture */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F5A21F113F900BAD5B0 /* Fixtures.swift */,
+			);
+			path = Fixture;
+			sourceTree = "<group>";
+		};
+		C5281F5E21F11F4000BAD5B0 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F5F21F11F8700BAD5B0 /* GistApiController.swift */,
+			);
+			path = "Network Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5281F5B21F113F900BAD5B0 /* curriculumvitae.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5281F6221F1202E00BAD5B0 /* Constant.swift in Sources */,
 				C5281F2E21F1019E00BAD5B0 /* ViewController.swift in Sources */,
+				C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */,
 				C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */,
+				C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */,
+				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
+				C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +444,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5281F5C21F113F900BAD5B0 /* MockServer.swift in Sources */,
 				C5281F4121F101A000BAD5B0 /* CurriculumVitaeTests.swift in Sources */,
+				C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
