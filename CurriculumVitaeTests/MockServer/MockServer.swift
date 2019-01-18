@@ -33,14 +33,14 @@ class MockServer {
         return self
     }
     
-//    @discardableResult
-//    func respondToMovieDetails(fixture: String = "movieDetail", statusCode: Int = 200)  -> MockServer {
-//        let responseData = dataFromFixture(fixture)
-//        
-//        addResponse(method: "GET", path: "/movie/297802", responseData: responseData!, statusCode: statusCode)
-//
-//        return self
-//    }
+    @discardableResult
+    func respondToGistsError(fixture: String = "gistErrorResponse", statusCode: Int = 404)  -> MockServer {
+        let responseData = dataFromFixture(fixture)
+        
+        addResponse(method: "GET", path: "/gists/feb733f8c6d6c38b9db4208fb7791567", responseData: responseData!, statusCode: statusCode)
+
+        return self
+    }
 }
 
 

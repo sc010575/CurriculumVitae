@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YzA-ko-gRW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RootViewController" id="BYZ-38-t0r" customClass="RootViewController" customModule="CurriculumVitae" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or7-v8-N27" customClass="ProfileView" customModule="CurriculumVitae" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Z3-9H-2a0">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="180"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VTc-69-8RN">
+                                                <rect key="frame" x="117.5" y="0.0" width="140" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="l0v-bO-JqE"/>
+                                                    <constraint firstAttribute="height" constant="140" id="xfP-lC-IUH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suman Chatterjee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-Sj-9Lu">
+                                                <rect key="frame" x="64.5" y="150" width="246" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BGQ-Hy-68E">
+                                        <rect key="frame" x="169" y="71.5" width="37" height="37"/>
+                                        <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4Z3-9H-2a0" firstAttribute="leading" secondItem="or7-v8-N27" secondAttribute="leading" id="BYS-4w-RCc"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Z3-9H-2a0" secondAttribute="bottom" id="Enb-6x-VYl"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Z3-9H-2a0" secondAttribute="trailing" id="FXQ-s6-vdU"/>
+                                    <constraint firstItem="4Z3-9H-2a0" firstAttribute="top" secondItem="or7-v8-N27" secondAttribute="top" constant="20" id="Mqr-ve-Z9g"/>
+                                    <constraint firstItem="BGQ-Hy-68E" firstAttribute="centerY" secondItem="VTc-69-8RN" secondAttribute="centerY" id="NB4-go-Rc9"/>
+                                    <constraint firstItem="BGQ-Hy-68E" firstAttribute="centerX" secondItem="VTc-69-8RN" secondAttribute="centerX" id="wae-7F-8bt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="VTc-69-8RN" id="oNk-Pp-rEw"/>
+                                    <outlet property="loadingIndicator" destination="BGQ-Hy-68E" id="cMF-mA-4s4"/>
+                                    <outlet property="nameLabel" destination="DxC-Sj-9Lu" id="Bic-0Q-N8I"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HoV-Uh-8Yt">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HoV-Uh-8Yt" secondAttribute="bottom" id="J3f-Aq-2f5"/>
+                            <constraint firstItem="HoV-Uh-8Yt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S1t-YM-OCt"/>
+                            <constraint firstItem="HoV-Uh-8Yt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="TTH-d8-No7"/>
+                            <constraint firstItem="or7-v8-N27" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dJq-eH-t5D"/>
+                            <constraint firstItem="HoV-Uh-8Yt" firstAttribute="top" secondItem="or7-v8-N27" secondAttribute="bottom" id="hAr-GU-NvX"/>
+                            <constraint firstItem="or7-v8-N27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mH1-al-HKi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="or7-v8-N27" secondAttribute="trailing" id="z3m-RE-pXf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HoV-Uh-8Yt" secondAttribute="trailing" id="z5T-8X-rhw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1Pw-4O-kTL"/>
+                    <connections>
+                        <outlet property="profileView" destination="or7-v8-N27" id="1SS-Rj-Epk"/>
+                        <outlet property="tableView" destination="HoV-Uh-8Yt" id="UiC-Yf-wnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-682" y="197"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DF1-0c-2Dd">
+            <objects>
+                <navigationController id="YzA-ko-gRW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aWE-bZ-tMz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aof-83-7Vk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aa-np-O7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1490" y="198"/>
         </scene>
     </scenes>
 </document>

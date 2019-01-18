@@ -21,6 +21,7 @@ class GistApiController: NSObject {
 
     private(set) var onSuccess: ((_ url: String) -> Void)?
     private(set) var onFailure: ((_ result: State, _ error: Error?) -> Void)?
+    private(set) var onRetriveCurriculumVitae: ((_ curriculumVitae:CurriculumVitae) -> Void)?
     private(set) var state: State = .notFetchededYet
 
     @discardableResult
@@ -34,6 +35,13 @@ class GistApiController: NSObject {
     func onFailure(_ handler: @escaping (_ result: State, _ error: Error?) -> Void) -> GistApiController {
         self.onFailure = handler
 
+        return self
+    }
+
+    @discardableResult
+    func onRetriveCurriculumVitae(_ handler: @escaping (_ curriculumVitae:CurriculumVitae) -> Void) -> GistApiController {
+        self.onRetriveCurriculumVitae = handler
+        
         return self
     }
 
@@ -84,9 +92,9 @@ class GistApiController: NSObject {
                 guard let data = data else { return }
 
                 if let curriculumVitae: CurriculumVitae = ParseJson.parse(data: data) {
-                    print(curriculumVitae.name)
-                    print(curriculumVitae.profileImage)
-                    print(curriculumVitae.results[0].company)
+                    DispatchQueue.main.async {
+                        self.onRetriveCurriculumVitae?(curriculumVitae)
+                    }
                 }
             }
 
