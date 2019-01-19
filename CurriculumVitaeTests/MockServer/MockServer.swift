@@ -41,6 +41,16 @@ class MockServer {
 
         return self
     }
+    
+    @discardableResult
+    func respondToGistFile(fixture: String = "curriculumvitae", statusCode: Int = 200)  -> MockServer {
+        let responseData = dataFromFixture(fixture)
+        
+        addResponse(method: "GET", path: "/sc010575/feb733f8c6d6c38b9db4208fb7791567", responseData: responseData!, statusCode: statusCode)
+        
+        return self
+    }
+
 }
 
 

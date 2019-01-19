@@ -41,7 +41,7 @@ class RootViewCoordinator: Coordinator {
     func start() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         guard let rootViewController = storyBoard.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController else { return }
-        rootViewController.title = "cccc"
+        rootViewController.title = "Loading..."
         let apiController = GistApiController()
         let viewModel = RootViewModel(apiController)
         rootViewController.viewModel = viewModel

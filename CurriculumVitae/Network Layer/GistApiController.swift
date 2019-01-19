@@ -47,7 +47,7 @@ class GistApiController: NSObject {
 
     func gistFile() {
         guard let baseUrl = Constant.baseURL else { return }
-        let url = baseUrl.appendingPathComponent(Constant.fileId)
+        let url = baseUrl.appendingPathComponent(Constant.QueryType.gists.rawValue).appendingPathComponent(Constant.fileId)
         let urlRequest = URLRequest(url: url)
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -75,7 +75,7 @@ class GistApiController: NSObject {
     }
 
     func populateCurriculumVitae(with url: String) {
-        guard let url = URL(string: url) else {
+        guard let url = Constant.isUnitTest ? URL(string: "http://localhost:8088/sc010575/feb733f8c6d6c38b9db4208fb7791567"): URL(string: url) else {
             return
         }
         let urlRequest = URLRequest(url: url)

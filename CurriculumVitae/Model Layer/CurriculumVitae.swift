@@ -35,4 +35,5 @@ struct Technical : Decodable {
     let developmentTools:String?
     let configurationManagement:String?
     let programmingLanguage:String?
+    static let emptyTechnical = Technical(summary: "", strong: [], developmentTools: "", configurationManagement: "", programmingLanguage: "")
 }

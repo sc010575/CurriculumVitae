@@ -57,6 +57,8 @@ class RootViewModel {
             return curriculamVitae.value?.technicalKnowledge?.summary ?? ""
         case .experience:
             return ""
+        default:
+            return ""
         }
     }
 }

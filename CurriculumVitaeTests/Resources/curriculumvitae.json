@@ -5,6 +5,21 @@
     "nationality": "British",
     "profile" : "Senior iOS Developer more than 19 years of software development experience. Skills included strong knowledge of iOS, Objective-C, Swift, C/C++, Agile development approach, Object-Oriented Analysis and Design, Object Oriented Programming, software integration and Product development.",
     "phone": "+447856518020",
+    "email": "chatterjeesuman@gmail.com",
+    "web_site": "https://www.linkedin.com/in/chatterjeesuman/",
+    "technical_knowledge": {
+        "summary" : "Over 7+ years of experience in iOS,Swift and native iOS applications development both for iPhone and iPad.",
+        "strong" : [
+            "Commercial development experience with Swift in all version.",
+            "Experience developing SSL/HTTPS secure iOS Apps using Security framework and Keychain.",
+            "TDD and Continuous Integration best practice. BDD and test automation.",
+            "JSON, REST, SOAP Web services, OAuth services etc.",
+            "Experience on various architectural pattern such as MVVM, MVVM-C, MVC, Clean Swift and Viper, Protocol oriented programming."
+        ],
+        "development_tools" : "Xcode, Eclipse, IntelliJ, Visual Studio",
+        "configuration_management" : "GIT, SVN",
+        "programming_language" : "Swift,Objective-C,C, C++, Java, Android, Kotlin"
+    },
     "results": [
         {
             "company": "Sainsbury's",
@@ -20,6 +35,6 @@
             "end_date":"2018-10-03",
             "overview": "Eddie Brock is a reporter—investigating people who want to go unnoticed. But after he makes a terrible discovery at the Life Foundation, he begins to transform into ‘Venom’.  The Foundation has discovered creatures called symbiotes, and believes they’re the key to the next step in human evolution. Unwittingly bonded with one, Eddie discovers he has incredible new abilities—and a voice in his head that’s telling him to embrace the darkness."
         }
-
+        
     ]
 }

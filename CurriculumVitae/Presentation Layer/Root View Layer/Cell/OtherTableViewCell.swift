@@ -19,8 +19,13 @@ class OtherTableViewCell: CVTableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(_ title:String,_ detail:String) {
+    func configure(_ title:String,_ detail:String?) {
         titleLabel.text = title
+        
+        guard let detail = detail else {
+            detailLabel.isHidden = true
+            return
+        }
         detailLabel.text = detail
     }
 }

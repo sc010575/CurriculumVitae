@@ -9,9 +9,9 @@
 import Foundation
 
 struct GistMain:Decodable {
-    var files:[String:fileDetails]
+    let files:[String:fileDetails]
 }
 
 struct fileDetails:Decodable {
-    var rawUrl:String
+    let rawUrl:String
 }

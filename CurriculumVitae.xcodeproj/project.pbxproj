@@ -12,7 +12,6 @@
 		C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F2F21F1019E00BAD5B0 /* Main.storyboard */; };
 		C5281F3321F101A000BAD5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5281F3221F101A000BAD5B0 /* Assets.xcassets */; };
 		C5281F3621F101A000BAD5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F3421F101A000BAD5B0 /* LaunchScreen.storyboard */; };
-		C5281F4121F101A000BAD5B0 /* CurriculumVitaeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */; };
 		C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F4E21F1117E00BAD5B0 /* CurriculumVitae.swift */; };
 		C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5021F1120400BAD5B0 /* GistMain.swift */; };
 		C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5321F1126500BAD5B0 /* Serialize.swift */; };
@@ -33,6 +32,12 @@
 		C5281F7D21F32CFA00BAD5B0 /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5281F7B21F32CFA00BAD5B0 /* SummaryTableViewCell.xib */; };
 		C5281F8021F3378200BAD5B0 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F7E21F3378200BAD5B0 /* OtherTableViewCell.swift */; };
 		C5281F8121F3378200BAD5B0 /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5281F7F21F3378200BAD5B0 /* OtherTableViewCell.xib */; };
+		C5281F8521F3565E00BAD5B0 /* TechnicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F8421F3565E00BAD5B0 /* TechnicalViewController.swift */; };
+		C5281F8721F3567E00BAD5B0 /* Technical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F8621F3567E00BAD5B0 /* Technical.storyboard */; };
+		C5281F8A21F35AA300BAD5B0 /* TechnicalViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F8921F35AA300BAD5B0 /* TechnicalViewControllerTest.swift */; };
+		C5281F8C21F35D5D00BAD5B0 /* TechnicalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F8B21F35D5D00BAD5B0 /* TechnicalViewModel.swift */; };
+		C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9021F3847700BAD5B0 /* Viewcontroller+Test.swift */; };
+		C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +67,6 @@
 		C5281F3521F101A000BAD5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5281F3721F101A000BAD5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5281F3C21F101A000BAD5B0 /* CurriculumVitaeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumVitaeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitaeTests.swift; sourceTree = "<group>"; };
 		C5281F4221F101A000BAD5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5281F4E21F1117E00BAD5B0 /* CurriculumVitae.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitae.swift; sourceTree = "<group>"; };
 		C5281F5021F1120400BAD5B0 /* GistMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistMain.swift; sourceTree = "<group>"; };
@@ -84,6 +88,12 @@
 		C5281F7B21F32CFA00BAD5B0 /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
 		C5281F7E21F3378200BAD5B0 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
 		C5281F7F21F3378200BAD5B0 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		C5281F8421F3565E00BAD5B0 /* TechnicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewController.swift; sourceTree = "<group>"; };
+		C5281F8621F3567E00BAD5B0 /* Technical.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Technical.storyboard; sourceTree = "<group>"; };
+		C5281F8921F35AA300BAD5B0 /* TechnicalViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewControllerTest.swift; sourceTree = "<group>"; };
+		C5281F8B21F35D5D00BAD5B0 /* TechnicalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewModel.swift; sourceTree = "<group>"; };
+		C5281F9021F3847700BAD5B0 /* Viewcontroller+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Viewcontroller+Test.swift"; sourceTree = "<group>"; };
+		C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewModelMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +172,12 @@
 		C5281F3F21F101A000BAD5B0 /* CurriculumVitaeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5281F8D21F3845000BAD5B0 /* Extension */,
 				C5281F6A21F1CF8000BAD5B0 /* Presentation Layer */,
 				C5281F6521F12B3C00BAD5B0 /* Network Layer */,
 				C5281F5921F113F900BAD5B0 /* Fixture */,
 				C5281F5721F113F900BAD5B0 /* MockServer */,
 				C5281F5521F113F900BAD5B0 /* Resources */,
-				C5281F4021F101A000BAD5B0 /* CurriculumVitaeTests.swift */,
 				C5281F4221F101A000BAD5B0 /* Info.plist */,
 			);
 			path = CurriculumVitaeTests;
@@ -199,6 +209,7 @@
 				C5281F2F21F1019E00BAD5B0 /* Main.storyboard */,
 				C5281F7521F1F53B00BAD5B0 /* Coordinator */,
 				C5281F6C21F1CFD400BAD5B0 /* Root View Layer */,
+				C5281F8321F3560100BAD5B0 /* Technical View layer */,
 			);
 			path = "Presentation Layer";
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 		C5281F6A21F1CF8000BAD5B0 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				C5281F8821F35A8600BAD5B0 /* Technical View layer */,
 				C5281F6B21F1CFB700BAD5B0 /* Root View Layer */,
 			);
 			path = "Presentation Layer";
@@ -298,6 +310,41 @@
 				C5281F7F21F3378200BAD5B0 /* OtherTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5281F8321F3560100BAD5B0 /* Technical View layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F8421F3565E00BAD5B0 /* TechnicalViewController.swift */,
+				C5281F8621F3567E00BAD5B0 /* Technical.storyboard */,
+				C5281F8B21F35D5D00BAD5B0 /* TechnicalViewModel.swift */,
+			);
+			path = "Technical View layer";
+			sourceTree = "<group>";
+		};
+		C5281F8821F35A8600BAD5B0 /* Technical View layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F9221F3975100BAD5B0 /* Mock */,
+				C5281F8921F35AA300BAD5B0 /* TechnicalViewControllerTest.swift */,
+			);
+			path = "Technical View layer";
+			sourceTree = "<group>";
+		};
+		C5281F8D21F3845000BAD5B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F9021F3847700BAD5B0 /* Viewcontroller+Test.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C5281F9221F3975100BAD5B0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +436,7 @@
 			files = (
 				C5281F3621F101A000BAD5B0 /* LaunchScreen.storyboard in Resources */,
 				C5281F3321F101A000BAD5B0 /* Assets.xcassets in Resources */,
+				C5281F8721F3567E00BAD5B0 /* Technical.storyboard in Resources */,
 				C5281F7D21F32CFA00BAD5B0 /* SummaryTableViewCell.xib in Resources */,
 				C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */,
 				C5281F8121F3378200BAD5B0 /* OtherTableViewCell.xib in Resources */,
@@ -524,8 +572,10 @@
 				C5281F7721F1F56D00BAD5B0 /* Coordinator.swift in Sources */,
 				C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */,
 				C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */,
+				C5281F8C21F35D5D00BAD5B0 /* TechnicalViewModel.swift in Sources */,
 				C5281F7921F26CB500BAD5B0 /* UIImageView+LoadImage.swift in Sources */,
 				C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */,
+				C5281F8521F3565E00BAD5B0 /* TechnicalViewController.swift in Sources */,
 				C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */,
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
@@ -540,8 +590,10 @@
 			files = (
 				C5281F6E21F1D03200BAD5B0 /* RootViewControllerTest.swift in Sources */,
 				C5281F5C21F113F900BAD5B0 /* MockServer.swift in Sources */,
-				C5281F4121F101A000BAD5B0 /* CurriculumVitaeTests.swift in Sources */,
+				C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */,
 				C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */,
+				C5281F8A21F35AA300BAD5B0 /* TechnicalViewControllerTest.swift in Sources */,
+				C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */,
 				C5281F6721F12B6300BAD5B0 /* GistApiControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

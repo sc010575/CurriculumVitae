@@ -8,16 +8,23 @@
 
 import Foundation
 
+
 struct Constant {
+    enum QueryType: String {
+        case gists
+        case file = "sc010575/feb733f8c6d6c38b9db4208fb7791567"
+        case none
+    }
+    
     static let fileId = "feb733f8c6d6c38b9db4208fb7791567"
     
     static var baseURL: URL? {
         
         if isUITest || isUnitTest {
-            return URL(string: "http://localhost:8088/gists")
+            return URL(string: "http://localhost:8088")
         }
         
-        return URL(string: "https://api.github.com/gists")
+        return URL(string: "https://api.github.com")
     }
     
     static var isUnitTest: Bool {
