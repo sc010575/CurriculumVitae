@@ -38,14 +38,25 @@ class RootViewModel {
     }
 
     func getGists() {
-        apiController.onSuccess{ url in
+        apiController.onSuccess { url in
             self.populateCV(url)
         }.gistFile()
     }
-    
-    func populateCV(_ url:String) {
+
+    func populateCV(_ url: String) {
         apiController.onRetriveCurriculumVitae { curriculamVitae in
             self.curriculamVitae.value = curriculamVitae
         }.populateCurriculumVitae(with: url)
+    }
+
+    func summary(for section: ElementsTitles) -> String {
+        switch section {
+        case .summary:
+            return curriculamVitae.value?.profile ?? "Summary not found."
+        case .technical:
+            return curriculamVitae.value?.technicalKnowledge?.summary ?? ""
+        case .experience:
+            return ""
+        }
     }
 }
