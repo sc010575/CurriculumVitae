@@ -27,16 +27,21 @@ final class RootViewControllerTest: QuickSpec {
                     self.server.respondToGists().respondToGistFile().start()
                     viewController?.viewModel = RootViewModel(GistApiController())
                     viewController?.preloadView()
+                    let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
+                    defer { tearDown() }
                 }
 
                 afterEach {
                     self.server.stop()
                 }
                 it("has load the title is gists file loaded successfully") {
-                    let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
-                    defer { tearDown() }
-
                     expect(viewController?.title).toEventually(equal("Suman Chatterjee"))
+                    
+                }
+                it("should populate the profile view with right value") {
+                    expect(viewController?.profileView.addressLabel.text).toEventually(equal("131 West Plaza, Townlane , Stanwell, Staines-Upon-Thames, TW19 7FH"))
+                    expect(viewController?.profileView.emailLabel.text).toEventually(equal("chatterjeesuman@gmail.com"))
+                    expect(viewController?.profileView.phoneLabel.text).toEventually(equal("+447856518020"))
 
                 }
                 it("should load right number of section") {

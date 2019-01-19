@@ -10,7 +10,10 @@ import UIKit
 
 
 class ProfileView: UIView {
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+@IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var webSiteLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
 
@@ -30,12 +33,27 @@ extension ProfileView {
                     self.imageView.layer.cornerRadius = 10
                 })
             }
-            nameLabel.text = curriculmVitae.name
+            addressLabel.text = curriculmVitae.address
+            phoneLabel.text = curriculmVitae.phone
+            emailLabel.text = curriculmVitae.email
+            webSiteLabel.text = curriculmVitae.webSite
+            hideLabel(false)
+
         } else {
-            nameLabel.text = "Loading..."
+            addressLabel.text = "Loading..."
+            hideLabel(true)
             loadingIndicator?.startAnimating()
             imageView.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
             imageView.layer.cornerRadius = 10
         }
     }
+    
+    private func hideLabel(_ hide:Bool) {
+        
+        phoneLabel.isHidden = hide
+        emailLabel.isHidden = hide
+        webSiteLabel.isHidden = hide
+
+    }
+    
 }
