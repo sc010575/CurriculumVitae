@@ -8,31 +8,11 @@
 
 import Foundation
 
-class Box<T> {
-    typealias Listener = (T) -> Void
-    var listener: Listener?
-
-    var value: T {
-        didSet {
-            listener?(value)
-        }
-    }
-
-    init(_ value: T) {
-        self.value = value
-
-    }
-
-    func bind(listener: Listener?) {
-        self.listener = listener
-        listener?(value)
-    }
-}
 
 class RootViewModel {
-
     private (set) var apiController: GistApiController!
     private (set) var curriculamVitae: Box<CurriculumVitae?> = Box(nil)
+    private (set) var applicationState: Box<State> = Box(State.notFetchededYet)
     init(_ apiController: GistApiController) {
         self.apiController = apiController
     }
@@ -40,6 +20,8 @@ class RootViewModel {
     func getGists() {
         apiController.onSuccess { url in
             self.populateCV(url)
+            }.onFailure { status,error in
+                self.applicationState.value = status
         }.gistFile()
     }
 

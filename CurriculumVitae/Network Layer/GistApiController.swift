@@ -13,6 +13,7 @@ enum State {
     case loading
     case noResults
     case dataError
+    case notReachable
     case success
 }
 
@@ -46,6 +47,11 @@ class GistApiController: NSObject {
     }
 
     func gistFile() {
+        
+        guard currentReachabilityStatus != .notReachable else {
+            self.onFailure?(.notReachable, nil)
+            return
+        }
         guard let baseUrl = Constant.baseURL else { return }
         let url = baseUrl.appendingPathComponent(Constant.QueryType.gists.rawValue).appendingPathComponent(Constant.fileId)
         let urlRequest = URLRequest(url: url)

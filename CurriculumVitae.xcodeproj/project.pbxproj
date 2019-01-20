@@ -44,6 +44,10 @@
 		C5281F9E21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9D21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift */; };
 		C5281FA021F4822000BAD5B0 /* ExperienceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9F21F4822000BAD5B0 /* ExperienceDetailsViewController.swift */; };
 		C5281FA321F4922500BAD5B0 /* ExperienceViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */; };
+		C5281FA821F4B41F00BAD5B0 /* CurriculumVitaeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FA721F4B41F00BAD5B0 /* CurriculumVitaeTest.swift */; };
+		C5281FAA21F4B5E500BAD5B0 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FA921F4B5E500BAD5B0 /* empty.json */; };
+		C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */; };
+		C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAE21F4BDC300BAD5B0 /* Box.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +110,10 @@
 		C5281F9D21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListTableViewCell.swift; sourceTree = "<group>"; };
 		C5281F9F21F4822000BAD5B0 /* ExperienceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsViewController.swift; sourceTree = "<group>"; };
 		C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewControllerTest.swift; sourceTree = "<group>"; };
+		C5281FA721F4B41F00BAD5B0 /* CurriculumVitaeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitaeTest.swift; sourceTree = "<group>"; };
+		C5281FA921F4B5E500BAD5B0 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
+		C5281FAE21F4BDC300BAD5B0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,7 @@
 		C5281F3F21F101A000BAD5B0 /* CurriculumVitaeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5281FA621F4B3DB00BAD5B0 /* Model */,
 				C5281F8D21F3845000BAD5B0 /* Extension */,
 				C5281F6A21F1CF8000BAD5B0 /* Presentation Layer */,
 				C5281F6521F12B3C00BAD5B0 /* Network Layer */,
@@ -219,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				C5281F2F21F1019E00BAD5B0 /* Main.storyboard */,
+				C5281FAD21F4BD9500BAD5B0 /* Listener */,
 				C5281F7521F1F53B00BAD5B0 /* Coordinator */,
 				C5281F6C21F1CFD400BAD5B0 /* Root View Layer */,
 				C5281F8321F3560100BAD5B0 /* Technical View layer */,
@@ -241,6 +251,7 @@
 				C5281F6821F1376600BAD5B0 /* gistErrorResponse.json */,
 				C5281F6321F129F800BAD5B0 /* gistResponse.json */,
 				C5281F5621F113F900BAD5B0 /* curriculumvitae.json */,
+				C5281FA921F4B5E500BAD5B0 /* empty.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -266,6 +277,7 @@
 			children = (
 				C5281F5F21F11F8700BAD5B0 /* GistApiController.swift */,
 				C5281F7821F26CB500BAD5B0 /* UIImageView+LoadImage.swift */,
+				C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -389,6 +401,22 @@
 			path = "Experience Layer";
 			sourceTree = "<group>";
 		};
+		C5281FA621F4B3DB00BAD5B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5281FA721F4B41F00BAD5B0 /* CurriculumVitaeTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5281FAD21F4BD9500BAD5B0 /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				C5281FAE21F4BDC300BAD5B0 /* Box.swift */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -491,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5281F5B21F113F900BAD5B0 /* curriculumvitae.json in Resources */,
+				C5281FAA21F4B5E500BAD5B0 /* empty.json in Resources */,
 				C5281F6421F129F800BAD5B0 /* gistResponse.json in Resources */,
 				C5281F6921F1376600BAD5B0 /* gistErrorResponse.json in Resources */,
 			);
@@ -624,7 +653,9 @@
 				C5281F8521F3565E00BAD5B0 /* TechnicalViewController.swift in Sources */,
 				C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */,
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
+				C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
+				C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */,
 				C5281F7C21F32CFA00BAD5B0 /* SummaryTableViewCell.swift in Sources */,
 				C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */,
 				C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */,
@@ -643,6 +674,7 @@
 				C5281F8A21F35AA300BAD5B0 /* TechnicalViewControllerTest.swift in Sources */,
 				C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */,
 				C5281F6721F12B6300BAD5B0 /* GistApiControllerTest.swift in Sources */,
+				C5281FA821F4B41F00BAD5B0 /* CurriculumVitaeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

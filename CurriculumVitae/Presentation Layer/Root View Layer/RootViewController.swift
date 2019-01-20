@@ -33,6 +33,13 @@ class RootViewController: UIViewController {
             self.tableView.isHidden = false
             self.tableView.reloadData()
         }
+        viewModel.applicationState.bind { state in
+            if state == .notReachable {
+                self.profileView.isHidden = true
+                self.errorWithMessage(message: "No Network Connection")
+                return
+            }
+        }
         tableView.isHidden = true
         SummaryTableViewCell.register(tableView: tableView)
         OtherTableViewCell.register(tableView: tableView)
@@ -56,6 +63,15 @@ class RootViewController: UIViewController {
             experienceVC.viewModel = experienceViewModel
 
         }
+    }
+    
+    func errorWithMessage(message: String) {
+        
+        let alert = UIAlertController(title: "Service Error", message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+        
     }
 }
 

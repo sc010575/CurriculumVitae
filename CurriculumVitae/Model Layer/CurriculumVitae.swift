@@ -18,7 +18,6 @@ struct CurriculumVitae:Decodable {
     let address:String
     let technicalKnowledge:Technical?
     let results:[Result]
-//    static let emptyCurriculumVitae = CurriculumVitae(profileImage: "",name:"",profile:"",phone:"",address:"",results: [])
 }
 
 struct Result :Decodable {
