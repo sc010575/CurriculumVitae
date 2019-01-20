@@ -4,6 +4,7 @@ The app is an own CV app. The CV data store as a Gists file and show the details
 ### Api Links
 - https://api.github.com/gists/feb733f8c6d6c38b9db4208fb7791567 - For getting the first response for the gistfile
 - https://gist.githubusercontent.com/sc010575/feb733f8c6d6c38b9db4208fb7791567/raw/64b0d8d7c9f7bcc151a325d9bc6691b67323b82e/CurriculumVitae - for the JSON response of the file
+- https://i.ibb.co/ - For storing the profile picture and the company icons
 
 ### Development Platform
 - iOS 12 and XCode 10.1
