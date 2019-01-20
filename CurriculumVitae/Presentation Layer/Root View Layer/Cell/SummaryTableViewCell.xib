@@ -24,6 +24,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professional summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyy-wg-7bt">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PROFESSIONAL"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="OCB-k1-6II"/>
                                 </constraints>
@@ -34,6 +35,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olT-X1-Icu">
                                 <rect key="frame" x="0.0" y="44" width="300" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PROFESSIONAL_SUMMARY"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ZRR-Wd-hVc"/>
                                 </constraints>

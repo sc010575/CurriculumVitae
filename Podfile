@@ -17,4 +17,8 @@ target 'CurriculumVitae' do
 	  test_pods
   end
 
+  target 'CurriculumVitaeUITests' do
+      test_pods
+  end
+
 end

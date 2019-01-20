@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7228F92F16974A076079C8B9 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2A388E79116841C6F5031 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework */; };
 		C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */; };
 		C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2D21F1019E00BAD5B0 /* RootViewController.swift */; };
 		C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F2F21F1019E00BAD5B0 /* Main.storyboard */; };
@@ -49,6 +50,14 @@
 		C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */; };
 		C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAE21F4BDC300BAD5B0 /* Box.swift */; };
 		C5281FB121F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */; };
+		C5281FC221F4DEE300BAD5B0 /* RootViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */; };
+		C5281FC321F4DF1800BAD5B0 /* gistErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281F6821F1376600BAD5B0 /* gistErrorResponse.json */; };
+		C5281FC421F4DF1800BAD5B0 /* gistResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281F6321F129F800BAD5B0 /* gistResponse.json */; };
+		C5281FC521F4DF1800BAD5B0 /* curriculumvitae.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281F5621F113F900BAD5B0 /* curriculumvitae.json */; };
+		C5281FC621F4DF1800BAD5B0 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FA921F4B5E500BAD5B0 /* empty.json */; };
+		C5281FC721F4DF7D00BAD5B0 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5A21F113F900BAD5B0 /* Fixtures.swift */; };
+		C5281FC821F4DF8300BAD5B0 /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5821F113F900BAD5B0 /* MockServer.swift */; };
+		C5281FCA21F4E00D00BAD5B0 /* RootViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,14 +70,24 @@
 			remoteGlobalIDString = C5281F2721F1019E00BAD5B0;
 			remoteInfo = CurriculumVitae;
 		};
+		C5281FBB21F4DE5E00BAD5B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5281F2021F1019E00BAD5B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5281F2721F1019E00BAD5B0;
+			remoteInfo = CurriculumVitae;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurriculumVitae.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CC8652C80F0C34A28D4BCE /* Pods-CurriculumVitae-CurriculumVitaeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests.release.xcconfig"; sourceTree = "<group>"; };
 		0D8087983A5D3D6F8F04A5F9 /* Pods-CurriculumVitae-CurriculumVitaeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA2A388E79116841C6F5031 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurriculumVitae_CurriculumVitaeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6001575D94EED5BC0D65AB57 /* Pods-CurriculumVitae-CurriculumVitaeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		666923F090681942DEFF330D /* Pods-CurriculumVitae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae.debug.xcconfig"; sourceTree = "<group>"; };
 		91D6BE0B2164748F2E738891 /* Pods-CurriculumVitae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae.release.xcconfig"; sourceTree = "<group>"; };
+		92036B27B586D8EA5722D9DD /* Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurriculumVitae_CurriculumVitaeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5281F2821F1019E00BAD5B0 /* CurriculumVitae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculumVitae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +135,10 @@
 		C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
 		C5281FAE21F4BDC300BAD5B0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsViewControllerTest.swift; sourceTree = "<group>"; };
+		C5281FB621F4DE5E00BAD5B0 /* CurriculumVitaeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumVitaeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5281FBA21F4DE5E00BAD5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTest.swift; sourceTree = "<group>"; };
+		C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +158,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5281FB321F4DE5E00BAD5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7228F92F16974A076079C8B9 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,6 +174,7 @@
 			children = (
 				08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */,
 				A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */,
+				5AA2A388E79116841C6F5031 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +186,8 @@
 				91D6BE0B2164748F2E738891 /* Pods-CurriculumVitae.release.xcconfig */,
 				0D8087983A5D3D6F8F04A5F9 /* Pods-CurriculumVitae-CurriculumVitaeTests.debug.xcconfig */,
 				09CC8652C80F0C34A28D4BCE /* Pods-CurriculumVitae-CurriculumVitaeTests.release.xcconfig */,
+				92036B27B586D8EA5722D9DD /* Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig */,
+				6001575D94EED5BC0D65AB57 /* Pods-CurriculumVitae-CurriculumVitaeUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -163,6 +197,7 @@
 			children = (
 				C5281F2A21F1019E00BAD5B0 /* CurriculumVitae */,
 				C5281F3F21F101A000BAD5B0 /* CurriculumVitaeTests */,
+				C5281FB721F4DE5E00BAD5B0 /* CurriculumVitaeUITests */,
 				C5281F2921F1019E00BAD5B0 /* Products */,
 				5070A302A72CEE5CD6E3342D /* Pods */,
 				49D39FF9752D940AE23BF1ED /* Frameworks */,
@@ -174,6 +209,7 @@
 			children = (
 				C5281F2821F1019E00BAD5B0 /* CurriculumVitae.app */,
 				C5281F3C21F101A000BAD5B0 /* CurriculumVitaeTests.xctest */,
+				C5281FB621F4DE5E00BAD5B0 /* CurriculumVitaeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,6 +456,24 @@
 			path = Listener;
 			sourceTree = "<group>";
 		};
+		C5281FB721F4DE5E00BAD5B0 /* CurriculumVitaeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5281FC021F4DE9C00BAD5B0 /* PageObjects */,
+				C5281FBA21F4DE5E00BAD5B0 /* Info.plist */,
+				C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */,
+			);
+			path = CurriculumVitaeUITests;
+			sourceTree = "<group>";
+		};
+		C5281FC021F4DE9C00BAD5B0 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */,
+			);
+			path = PageObjects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -464,6 +518,27 @@
 			productReference = C5281F3C21F101A000BAD5B0 /* CurriculumVitaeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C5281FB521F4DE5E00BAD5B0 /* CurriculumVitaeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5281FBD21F4DE5E00BAD5B0 /* Build configuration list for PBXNativeTarget "CurriculumVitaeUITests" */;
+			buildPhases = (
+				9FDD9654F63FFB280BA5DA10 /* [CP] Check Pods Manifest.lock */,
+				C5281FB221F4DE5E00BAD5B0 /* Sources */,
+				C5281FB321F4DE5E00BAD5B0 /* Frameworks */,
+				C5281FB421F4DE5E00BAD5B0 /* Resources */,
+				8DE6AA2C264E1A61CDF79EFE /* [CP] Embed Pods Frameworks */,
+				13A26C02B4549C961EBA2856 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5281FBC21F4DE5E00BAD5B0 /* PBXTargetDependency */,
+			);
+			name = CurriculumVitaeUITests;
+			productName = CurriculumVitaeUITests;
+			productReference = C5281FB621F4DE5E00BAD5B0 /* CurriculumVitaeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -478,6 +553,10 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					C5281F3B21F101A000BAD5B0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C5281F2721F1019E00BAD5B0;
+					};
+					C5281FB521F4DE5E00BAD5B0 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = C5281F2721F1019E00BAD5B0;
 					};
@@ -498,6 +577,7 @@
 			targets = (
 				C5281F2721F1019E00BAD5B0 /* CurriculumVitae */,
 				C5281F3B21F101A000BAD5B0 /* CurriculumVitaeTests */,
+				C5281FB521F4DE5E00BAD5B0 /* CurriculumVitaeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -528,9 +608,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5281FB421F4DE5E00BAD5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5281FC321F4DF1800BAD5B0 /* gistErrorResponse.json in Resources */,
+				C5281FC621F4DF1800BAD5B0 /* empty.json in Resources */,
+				C5281FC421F4DF1800BAD5B0 /* gistResponse.json in Resources */,
+				C5281FC521F4DF1800BAD5B0 /* curriculumvitae.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13A26C02B4549C961EBA2856 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7AEAACB6169021C1AACA9A2D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,6 +687,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE6AA2C264E1A61CDF79EFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDD9654F63FFB280BA5DA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CurriculumVitae-CurriculumVitaeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6E4CCFBDD50F6507E3B84CC /* [CP] Check Pods Manifest.lock */ = {
@@ -682,6 +828,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5281FB221F4DE5E00BAD5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5281FC821F4DF8300BAD5B0 /* MockServer.swift in Sources */,
+				C5281FCA21F4E00D00BAD5B0 /* RootViewPage.swift in Sources */,
+				C5281FC221F4DEE300BAD5B0 /* RootViewTest.swift in Sources */,
+				C5281FC721F4DF7D00BAD5B0 /* Fixtures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -689,6 +846,11 @@
 			isa = PBXTargetDependency;
 			target = C5281F2721F1019E00BAD5B0 /* CurriculumVitae */;
 			targetProxy = C5281F3D21F101A000BAD5B0 /* PBXContainerItemProxy */;
+		};
+		C5281FBC21F4DE5E00BAD5B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5281F2721F1019E00BAD5B0 /* CurriculumVitae */;
+			targetProxy = C5281FBB21F4DE5E00BAD5B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -910,6 +1072,46 @@
 			};
 			name = Release;
 		};
+		C5281FBE21F4DE5E00BAD5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92036B27B586D8EA5722D9DD /* Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G9KR27J78;
+				INFOPLIST_FILE = CurriculumVitaeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitaeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CurriculumVitae;
+			};
+			name = Debug;
+		};
+		C5281FBF21F4DE5E00BAD5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6001575D94EED5BC0D65AB57 /* Pods-CurriculumVitae-CurriculumVitaeUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G9KR27J78;
+				INFOPLIST_FILE = CurriculumVitaeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitaeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CurriculumVitae;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -936,6 +1138,15 @@
 			buildConfigurations = (
 				C5281F4921F101A000BAD5B0 /* Debug */,
 				C5281F4A21F101A000BAD5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5281FBD21F4DE5E00BAD5B0 /* Build configuration list for PBXNativeTarget "CurriculumVitaeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5281FBE21F4DE5E00BAD5B0 /* Debug */,
+				C5281FBF21F4DE5E00BAD5B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
