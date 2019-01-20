@@ -10,8 +10,8 @@ iOS 12 and XCode 10.1
 Swift 4.2
 
 ### Swift libraries (Only used for testing perpose)
-Quick.Nimble for BDD testing
-GCDWebServer for mock server
+- Quick.Nimble for BDD testing
+- GCDWebServer for mock server
 
 ### Targets
 CurriculumVitae - Main application target
