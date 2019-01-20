@@ -1,5 +1,5 @@
 //
-//  RootViewTest.swift
+//  ExperienceViewTest.swift
 //  CurriculumVitaeUITests
 //
 //  Created by Suman Chatterjee on 20/01/2019.
@@ -9,25 +9,19 @@
 import Nimble
 import Quick
 
-extension XCUIApplication {
-    func setUITestLocalServer() -> XCUIApplication {
-        launchEnvironment["IsLocalServerBackend"] = "true"
-        return self
-    }
-}
 
-class RootViewTest: QuickSpec {
+class ExperienceViewTest: QuickSpec {
     override func spec() {
-        describe("RootView Test") {
+        describe("ExperienceView Test") {
             var app: XCUIApplication?
             var server: MockServer?
-
+            
             beforeEach {
                 self.continueAfterFailure = false
                 Nimble.AsyncDefaults.Timeout = 15
-
+                
                 server = MockServer()
-
+                
                 app = XCUIApplication()
                     .setUITestLocalServer()
             }
@@ -35,39 +29,34 @@ class RootViewTest: QuickSpec {
                 app?.terminate()
                 server?.stop()
             }
-            context("When the user navigates to the app and then to the launch screen") {
-                it("displays the root view page") {
-                    app?.launch()
-
-                    _ = RootViewPage(app)
-                        .expectOnPage()
-                }
-            }
             context("when CurriculumVitae is fetched from the git hub") {
                 beforeEach {
                     server?.respondToGists().respondToGistFile()
                     server?.start()
                     app?.launch()
-
+                    
                 }
                 it("should display profile detailes after successful call") {
-
+                    
                     _ = RootViewPage(app)
                         .expectOnPage()
-                        .expectProfileName()
+                        .tapExperience()
+                    
+                    _ = ExperienceViewPage(app)
+                        .expectOnPage()
                 }
-            }
-            it("should display Technical Knowledge page when tap technical knowledge") {
-                server?.respondToGists().respondToGistFile()
-                server?.start()
-                app?.launch()
-
-                _ = RootViewPage(app)
-                    .expectOnPage()
-                    .tapTechnical()
-
-                _ = TechnicalViewPage(app)
-                    .expectOnPage()
+                it("should display responsibilities if user tap the experiences") {
+                    _ = RootViewPage(app)
+                        .expectOnPage()
+                        .tapExperience()
+                    
+                    _ = ExperienceViewPage(app)
+                        .expectOnPage()
+                        .tapExperience()
+                    
+                    _ = ExperienceDetailsPage(app)
+                        .expectOnPage()
+                }
             }
         }
     }

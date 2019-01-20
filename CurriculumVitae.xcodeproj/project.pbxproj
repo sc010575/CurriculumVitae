@@ -58,6 +58,10 @@
 		C5281FC721F4DF7D00BAD5B0 /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5A21F113F900BAD5B0 /* Fixtures.swift */; };
 		C5281FC821F4DF8300BAD5B0 /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F5821F113F900BAD5B0 /* MockServer.swift */; };
 		C5281FCA21F4E00D00BAD5B0 /* RootViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */; };
+		C5281FCC21F4EB0200BAD5B0 /* TechnicalViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FCB21F4EB0200BAD5B0 /* TechnicalViewPage.swift */; };
+		C5281FCE21F4EC3200BAD5B0 /* ExperienceViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FCD21F4EC3200BAD5B0 /* ExperienceViewTest.swift */; };
+		C5281FD021F4ECFC00BAD5B0 /* ExperienceViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */; };
+		C5281FD221F4FB8600BAD5B0 /* ExperienceDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -139,6 +143,10 @@
 		C5281FBA21F4DE5E00BAD5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTest.swift; sourceTree = "<group>"; };
 		C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewPage.swift; sourceTree = "<group>"; };
+		C5281FCB21F4EB0200BAD5B0 /* TechnicalViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewPage.swift; sourceTree = "<group>"; };
+		C5281FCD21F4EC3200BAD5B0 /* ExperienceViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewTest.swift; sourceTree = "<group>"; };
+		C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewPage.swift; sourceTree = "<group>"; };
+		C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +470,7 @@
 				C5281FC021F4DE9C00BAD5B0 /* PageObjects */,
 				C5281FBA21F4DE5E00BAD5B0 /* Info.plist */,
 				C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */,
+				C5281FCD21F4EC3200BAD5B0 /* ExperienceViewTest.swift */,
 			);
 			path = CurriculumVitaeUITests;
 			sourceTree = "<group>";
@@ -470,6 +479,9 @@
 			isa = PBXGroup;
 			children = (
 				C5281FC921F4E00D00BAD5B0 /* RootViewPage.swift */,
+				C5281FCB21F4EB0200BAD5B0 /* TechnicalViewPage.swift */,
+				C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */,
+				C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */,
 			);
 			path = PageObjects;
 			sourceTree = "<group>";
@@ -832,9 +844,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5281FCE21F4EC3200BAD5B0 /* ExperienceViewTest.swift in Sources */,
+				C5281FD221F4FB8600BAD5B0 /* ExperienceDetailsPage.swift in Sources */,
 				C5281FC821F4DF8300BAD5B0 /* MockServer.swift in Sources */,
+				C5281FCC21F4EB0200BAD5B0 /* TechnicalViewPage.swift in Sources */,
 				C5281FCA21F4E00D00BAD5B0 /* RootViewPage.swift in Sources */,
 				C5281FC221F4DEE300BAD5B0 /* RootViewTest.swift in Sources */,
+				C5281FD021F4ECFC00BAD5B0 /* ExperienceViewPage.swift in Sources */,
 				C5281FC721F4DF7D00BAD5B0 /* Fixtures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

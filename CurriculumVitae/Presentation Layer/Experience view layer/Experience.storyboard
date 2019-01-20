@@ -48,6 +48,7 @@
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxM-7e-eMK">
                                                                             <rect key="frame" x="0.0" y="0.0" width="257" height="41"/>
+                                                                            <accessibility key="accessibilityConfiguration" identifier="TITLE"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                             <color key="textColor" red="0.22388949790000001" green="0.5584629069" blue="0.92607927320000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -117,6 +118,9 @@
                                                 <constraint firstItem="PqW-dj-27V" firstAttribute="leading" secondItem="405-UK-AJN" secondAttribute="leading" constant="10" id="ny0-Ov-ZRE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="EXPERIENCE_CELL">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="activityIndicator" destination="dv1-Fj-0aR" id="wi5-yJ-Jb7"/>
                                             <outlet property="dateLabel" destination="q82-vO-QLd" id="37h-x1-5qE"/>
