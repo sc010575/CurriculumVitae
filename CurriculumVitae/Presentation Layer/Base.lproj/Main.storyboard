@@ -136,7 +136,7 @@
                     <navigationItem key="navigationItem" id="1Pw-4O-kTL"/>
                     <connections>
                         <outlet property="profileView" destination="or7-v8-N27" id="1SS-Rj-Epk"/>
-                        <outlet property="tableView" destination="HoV-Uh-8Yt" id="UiC-Yf-wnJ"/>
+                        <outlet property="rootTableView" destination="HoV-Uh-8Yt" id="UiC-Yf-wnJ"/>
                         <segue destination="u1r-gu-aOy" kind="show" identifier="MoveToTechnical" id="OhJ-pp-xO5"/>
                         <segue destination="LJ1-ou-Y20" kind="show" identifier="MoveToExperience" id="uDU-av-ktM"/>
                     </connections>

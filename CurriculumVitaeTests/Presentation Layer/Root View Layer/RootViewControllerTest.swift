@@ -10,6 +10,15 @@ import Nimble
 import Quick
 @testable import CurriculumVitae
 
+final class SegueHelper {
+    
+    static func segues(ofViewController viewController: UIViewController) -> [String] {
+        let identifiers = (viewController.value(forKey: "storyboardSegueTemplates") as? [AnyObject])?.compactMap({ $0.value(forKey: "identifier") as? String }) ?? []
+        return identifiers
+    }
+}
+
+
 final class RootViewControllerTest: QuickSpec {
 
     var server = MockServer()
@@ -45,11 +54,22 @@ final class RootViewControllerTest: QuickSpec {
                 it("should load right number of section") {
                     let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
                     defer { tearDown() }
-                    expect(viewController?.tableView.numberOfSections).toEventually(equal(2))
+                    expect(viewController?.rootTableView.numberOfSections).toEventually(equal(2))
                 }
                 it("should populate the professional summary") {
-                    let cell = viewController?.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? SummaryTableViewCell
+                    let cell = viewController?.rootTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? SummaryTableViewCell
                     expect(cell?.summaryLabel.text).toEventually(equal("Summary not found."))
+                }
+                it("should perform right segue when technical knowledge is selected")  {
+                    let indexPath = IndexPath(row: 0, section: 1)
+                    viewController?.tableView((viewController?.rootTableView!)!, didSelectRowAt: indexPath)
+                    
+                    let segue = SegueHelper.segues(ofViewController: viewController!)
+                    expect(segue.contains("MoveToTechnical")).toEventually(beTrue())
+                    expect(segue.count).to(equal(2))
+                    
+                    let sender = viewController?.shouldPerformSegue(withIdentifier: "MoveToTechnical", sender: nil)
+                    expect(sender).toEventually(beTrue())
                 }
             }
         }

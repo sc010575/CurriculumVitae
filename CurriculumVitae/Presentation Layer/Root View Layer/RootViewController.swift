@@ -22,7 +22,7 @@ enum ElementsTitles: String {
 class RootViewController: UIViewController {
 
     @IBOutlet weak var profileView: ProfileView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rootTableView: UITableView!
     var viewModel: RootViewModel!
 
     override func viewDidLoad() {
@@ -30,8 +30,8 @@ class RootViewController: UIViewController {
         viewModel.curriculamVitae.bind { curriculumVitae in
             self.profileView.displayProfile(curriculumVitae)
             self.title = curriculumVitae?.name
-            self.tableView.isHidden = false
-            self.tableView.reloadData()
+            self.rootTableView.isHidden = false
+            self.rootTableView.reloadData()
         }
         viewModel.applicationState.bind { state in
             if state == .notReachable {
@@ -40,9 +40,9 @@ class RootViewController: UIViewController {
                 return
             }
         }
-        tableView.isHidden = true
-        SummaryTableViewCell.register(tableView: tableView)
-        OtherTableViewCell.register(tableView: tableView)
+        rootTableView.isHidden = true
+        SummaryTableViewCell.register(tableView: rootTableView)
+        OtherTableViewCell.register(tableView: rootTableView)
         viewModel.getGists()
     }
 
