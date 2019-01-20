@@ -27,6 +27,9 @@ struct Result :Decodable {
     let startDate:String
     let endDate:String
     let overview:String
+    let title:String
+    let jobType:String
+    let responsibility:[String?]
 }
 
 struct Technical : Decodable {

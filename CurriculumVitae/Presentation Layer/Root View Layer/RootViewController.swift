@@ -47,6 +47,14 @@ class RootViewController: UIViewController {
             }
             let techViewModel = TechnicalViewModel(technical)
             technicalVC.viewModel = techViewModel
+        }else if segue.identifier == "MoveToExperience" {
+            guard let experienceVC = segue.destination as? ExperienceViewController,
+                let experiences = viewModel.curriculamVitae.value?.results else{
+                    return
+            }
+            let experienceViewModel = ExperienceViewModel(experiences)
+            experienceVC.viewModel = experienceViewModel
+
         }
     }
 }
@@ -114,6 +122,8 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         let title = sections[indexPath.section][indexPath.row]
 
         switch title {
+        case .experience:
+            performSegue(withIdentifier: "MoveToExperience", sender: nil)
         case .technical:
             performSegue(withIdentifier: "MoveToTechnical", sender: nil)
         default:

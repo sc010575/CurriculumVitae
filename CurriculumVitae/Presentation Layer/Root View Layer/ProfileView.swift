@@ -12,7 +12,7 @@ import UIKit
 class ProfileView: UIView {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-@IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var webSiteLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
@@ -49,11 +49,8 @@ extension ProfileView {
     }
     
     private func hideLabel(_ hide:Bool) {
-        
         phoneLabel.isHidden = hide
         emailLabel.isHidden = hide
         webSiteLabel.isHidden = hide
-
     }
-    
 }

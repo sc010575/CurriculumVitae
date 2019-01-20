@@ -23,17 +23,50 @@
     "results": [
         {
             "company": "Sainsbury's",
-            "icon": "https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg",
+            "icon": "https://i.ibb.co/Bg4wNx2/sainesbury.png",
+            "title" : "iOS Consultant",
+            "job_type": "Contract",
             "start_date": "2018-10-03",
-            "end_date":"2018-10-03",
-            "overview": "Eddie Brock is a reporter—investigating people who want to go unnoticed. But after he makes a terrible discovery at the Life Foundation, he begins to transform into ‘Venom’.  The Foundation has discovered creatures called symbiotes, and believes they’re the key to the next step in human evolution. Unwittingly bonded with one, Eddie discovers he has incredible new abilities—and a voice in his head that’s telling him to embrace the darkness."
+            "end_date": "",
+            "overview": "Involve in the Implementation of the brand-new version of Sainsbury’s SmartShop app. Providing the Architectural support for the iOS app.",
+            "responsibility" : [
+                "Prototyping and architecting new Sainsbury’s easy payments app with Swift 4.x where integrating the Apple pay and card payment service.",
+                "Implementing Barcode/QR-Code scanning and product Rescan feature.",
+                "Technology used Swift 4.x, XCode 10.x, iOS 12.",
+                "Pair programming, follow Extreme Programming best practice.",
+                "Architectural pattern such as MVVM, MVVM-C, MVC, Protocol oriented programming."
+            ]
         },
         {
-            "company": "Nectar",
-            "icon": "https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg",
-            "start_date": "2018-10-03",
-            "end_date":"2018-10-03",
-            "overview": "Eddie Brock is a reporter—investigating people who want to go unnoticed. But after he makes a terrible discovery at the Life Foundation, he begins to transform into ‘Venom’.  The Foundation has discovered creatures called symbiotes, and believes they’re the key to the next step in human evolution. Unwittingly bonded with one, Eddie discovers he has incredible new abilities—and a voice in his head that’s telling him to embrace the darkness."
+            "company": "Aimia",
+            "icon": "https://i.ibb.co/rk6ZLsv/aimia.png",
+            "title" : "Senior iOS engineer",
+            "job_type": "Contract",
+            "start_date": "2017-05-03",
+            "end_date":"2017-11-30",
+            "overview": "Working as a senior iOS consultant in the Aimia Nectar iPhone application.",
+            "responsibility" : [
+                "working with Objective C and Swift 3.2 and 4.0.",
+                "Architectural pattern MVVM with RXSwift and RXCocoa.",
+                "Technology used Swift 4.x, XCode 10.x, iOS 12.",
+                "Implementing security feature like certificate pinning and authentication."
+            ]
+        },
+        {
+            "company": "Travelex",
+            "icon": "https://i.ibb.co/KhqG1D1/travelex.png",
+            "title" : "Lead iOS Developer",
+            "job_type": "Permanent",
+            "start_date": "2016-04-01",
+            "end_date":"2017-01-30",
+            "overview": "Working as a lead iOS developer, participating architectural design to re-architecting the app ",
+            "responsibility" : [
+                "Involve Swift 3.0 migration of the app.",
+                "Architectural pattern MVVM with RXSwift and RXCocoa.",
+                "Coordinating work with QA (preparing documentation for app testing, writing unit tests).",
+                "Wrote custom UI components with Swift 2.3 and 3.0.",
+                "Responsible app submission and maintaining the Testflight build in the Appstore."
+            ]
         }
         
     ]

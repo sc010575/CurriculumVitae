@@ -38,6 +38,12 @@
 		C5281F8C21F35D5D00BAD5B0 /* TechnicalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F8B21F35D5D00BAD5B0 /* TechnicalViewModel.swift */; };
 		C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9021F3847700BAD5B0 /* Viewcontroller+Test.swift */; };
 		C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */; };
+		C5281F9721F3A8A600BAD5B0 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9621F3A8A600BAD5B0 /* ExperienceViewController.swift */; };
+		C5281F9921F3A8BC00BAD5B0 /* Experience.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F9821F3A8BC00BAD5B0 /* Experience.storyboard */; };
+		C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9A21F3A90F00BAD5B0 /* ExperienceViewModel.swift */; };
+		C5281F9E21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9D21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift */; };
+		C5281FA021F4822000BAD5B0 /* ExperienceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F9F21F4822000BAD5B0 /* ExperienceDetailsViewController.swift */; };
+		C5281FA321F4922500BAD5B0 /* ExperienceViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +100,12 @@
 		C5281F8B21F35D5D00BAD5B0 /* TechnicalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewModel.swift; sourceTree = "<group>"; };
 		C5281F9021F3847700BAD5B0 /* Viewcontroller+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Viewcontroller+Test.swift"; sourceTree = "<group>"; };
 		C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalViewModelMock.swift; sourceTree = "<group>"; };
+		C5281F9621F3A8A600BAD5B0 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		C5281F9821F3A8BC00BAD5B0 /* Experience.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Experience.storyboard; sourceTree = "<group>"; };
+		C5281F9A21F3A90F00BAD5B0 /* ExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewModel.swift; sourceTree = "<group>"; };
+		C5281F9D21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceListTableViewCell.swift; sourceTree = "<group>"; };
+		C5281F9F21F4822000BAD5B0 /* ExperienceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsViewController.swift; sourceTree = "<group>"; };
+		C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +222,7 @@
 				C5281F7521F1F53B00BAD5B0 /* Coordinator */,
 				C5281F6C21F1CFD400BAD5B0 /* Root View Layer */,
 				C5281F8321F3560100BAD5B0 /* Technical View layer */,
+				C5281F9521F3A85900BAD5B0 /* Experience view layer */,
 			);
 			path = "Presentation Layer";
 			sourceTree = "<group>";
@@ -268,6 +281,7 @@
 		C5281F6A21F1CF8000BAD5B0 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				C5281FA121F491FB00BAD5B0 /* Experience Layer */,
 				C5281F8821F35A8600BAD5B0 /* Technical View layer */,
 				C5281F6B21F1CFB700BAD5B0 /* Root View Layer */,
 			);
@@ -345,6 +359,34 @@
 				C5281F9321F3977A00BAD5B0 /* TechnicalViewModelMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		C5281F9521F3A85900BAD5B0 /* Experience view layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F9C21F3B65900BAD5B0 /* Cell */,
+				C5281F9621F3A8A600BAD5B0 /* ExperienceViewController.swift */,
+				C5281F9821F3A8BC00BAD5B0 /* Experience.storyboard */,
+				C5281F9A21F3A90F00BAD5B0 /* ExperienceViewModel.swift */,
+				C5281F9F21F4822000BAD5B0 /* ExperienceDetailsViewController.swift */,
+			);
+			path = "Experience view layer";
+			sourceTree = "<group>";
+		};
+		C5281F9C21F3B65900BAD5B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5281F9D21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C5281FA121F491FB00BAD5B0 /* Experience Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */,
+			);
+			path = "Experience Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +482,7 @@
 				C5281F7D21F32CFA00BAD5B0 /* SummaryTableViewCell.xib in Resources */,
 				C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */,
 				C5281F8121F3378200BAD5B0 /* OtherTableViewCell.xib in Resources */,
+				C5281F9921F3A8BC00BAD5B0 /* Experience.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,9 +609,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5281F9721F3A8A600BAD5B0 /* ExperienceViewController.swift in Sources */,
+				C5281F9E21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift in Sources */,
 				C5281F6221F1202E00BAD5B0 /* Constant.swift in Sources */,
 				C5281F7421F1E56E00BAD5B0 /* ProfileView.swift in Sources */,
 				C5281F8021F3378200BAD5B0 /* OtherTableViewCell.swift in Sources */,
+				C5281FA021F4822000BAD5B0 /* ExperienceDetailsViewController.swift in Sources */,
 				C5281F7721F1F56D00BAD5B0 /* Coordinator.swift in Sources */,
 				C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */,
 				C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */,
@@ -580,6 +626,7 @@
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
 				C5281F7C21F32CFA00BAD5B0 /* SummaryTableViewCell.swift in Sources */,
+				C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */,
 				C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +639,7 @@
 				C5281F5C21F113F900BAD5B0 /* MockServer.swift in Sources */,
 				C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */,
 				C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */,
+				C5281FA321F4922500BAD5B0 /* ExperienceViewControllerTest.swift in Sources */,
 				C5281F8A21F35AA300BAD5B0 /* TechnicalViewControllerTest.swift in Sources */,
 				C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */,
 				C5281F6721F12B6300BAD5B0 /* GistApiControllerTest.swift in Sources */,

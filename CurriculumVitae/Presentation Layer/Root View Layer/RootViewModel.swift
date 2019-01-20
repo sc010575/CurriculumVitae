@@ -56,7 +56,10 @@ class RootViewModel {
         case .technical:
             return curriculamVitae.value?.technicalKnowledge?.summary ?? ""
         case .experience:
-            return ""
+            guard let objective = curriculamVitae.value?.results[0].overview else {
+                return ""
+            }
+            return objective
         default:
             return ""
         }
