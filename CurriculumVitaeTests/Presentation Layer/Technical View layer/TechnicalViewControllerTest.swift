@@ -18,11 +18,9 @@ final class TechnicalViewControllerTest: QuickSpec {
         describe("TechnicalViewController tests") {
             var viewController: TechnicalViewController?
             let storyboard = UIStoryboard(name: "Technical", bundle: nil)
-            beforeEach {
-                viewController = storyboard.instantiateViewController(withIdentifier: "TechnicalViewController") as? TechnicalViewController
-            }
             context("When TechnicalViewController is launched ") {
                 beforeEach {
+                    viewController = storyboard.instantiateViewController(withIdentifier: "TechnicalViewController") as? TechnicalViewController
                     let technical = Technical(summary: "A summary", strong: ["Skill 1", "Skill 2"], developmentTools: "A Development tool", configurationManagement: "A configuration", programmingLanguage: "C++")
 
                     viewController?.viewModel = TechnicalViewModel(technical)

@@ -24,7 +24,7 @@ class TechnicalViewModel {
             let strongSkills = technical.value.strong
             for str in strongSkills {
                 if let strongStr = str {
-                    strongSkill = strongSkill + " • " + strongStr + "\n"
+                    strongSkill = strongSkill + "• " + strongStr + "\n\n"
                 }
             }
             return strongSkill

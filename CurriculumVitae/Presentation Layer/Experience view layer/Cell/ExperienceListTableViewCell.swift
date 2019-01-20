@@ -40,10 +40,10 @@ private extension ExperienceListTableViewCell {
 
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "MMM dd,yyyy"
-
+        
         let startDate = dateFormatterGet.date(from: experience.startDate) ?? Date()
-        let endDate =  experience.endDate.count == 0 ? Date() : dateFormatterGet.date(from: experience.endDate)
-        return endDate == Date() ?  "\(dateFormatterPrint.string(from: startDate)) - Till Date" : "\(dateFormatterPrint.string(from: startDate)) - \(dateFormatterPrint.string(from: endDate ?? Date()))"
+        let endDate =  experience.endDate.count == 0 ? nil : dateFormatterGet.date(from: experience.endDate)
+        return endDate == nil ?  "\(dateFormatterPrint.string(from: startDate)) - Till Date" : "\(dateFormatterPrint.string(from: startDate)) - \(dateFormatterPrint.string(from: endDate ?? Date()))"
     }
 
     func downloadAndDisplay(url stringUrl: String) {

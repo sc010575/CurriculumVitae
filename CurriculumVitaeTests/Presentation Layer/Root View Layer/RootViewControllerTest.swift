@@ -18,12 +18,10 @@ final class RootViewControllerTest: QuickSpec {
         describe("RootViewController tests") {
             var viewController: RootViewController?
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            beforeEach {
-                viewController = storyboard.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController
-                viewController?.title = "Loading .."
-            }
             context("When RootViewController is launched ") {
                 beforeEach {
+                    viewController = storyboard.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController
+                    viewController?.title = "Loading .."
                     self.server.respondToGists().respondToGistFile().start()
                     viewController?.viewModel = RootViewModel(GistApiController())
                     viewController?.preloadView()
@@ -48,6 +46,10 @@ final class RootViewControllerTest: QuickSpec {
                     let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
                     defer { tearDown() }
                     expect(viewController?.tableView.numberOfSections).toEventually(equal(2))
+                }
+                it("should populate the professional summary") {
+                    let cell = viewController?.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? SummaryTableViewCell
+                    expect(cell?.summaryLabel.text).toEventually(equal("Summary not found."))
                 }
             }
         }

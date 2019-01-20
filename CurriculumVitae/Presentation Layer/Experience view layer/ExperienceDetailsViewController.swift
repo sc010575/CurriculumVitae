@@ -26,7 +26,7 @@ private extension ExperienceDetailsViewController {
         var response = ""
         for str in experience.responsibility {
             if let strongStr = str {
-                response = response + " • " + strongStr + "\n"
+                response = response + "• " + strongStr + "\n\n"
             }
         }
         responseLabel.text = response

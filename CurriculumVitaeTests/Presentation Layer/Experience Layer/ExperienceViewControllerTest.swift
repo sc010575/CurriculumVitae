@@ -16,11 +16,9 @@ final class ExperienceViewControllerTest: QuickSpec {
         describe("ExperienceViewController tests") {
             var viewController: ExperienceViewController?
             let storyboard = UIStoryboard(name: "Experience", bundle: nil)
-            beforeEach {
-                viewController = storyboard.instantiateViewController(withIdentifier: "ExperienceViewController") as? ExperienceViewController
-            }
             context("When ExperienceViewController is launched ") {
                 beforeEach {
+                    viewController = storyboard.instantiateViewController(withIdentifier: "ExperienceViewController") as? ExperienceViewController
                     let result1 = Result(company: "Company 1", icon: "A Icon", startDate: "01-02-2001", endDate: "", overview: "A goo job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
 
                     let result2 = Result(company: "Company 2", icon: "A new Icon", startDate: "01-02-2000", endDate: "31-12-2000", overview: "A goo job", title: "Developer", jobType: "Permanent", responsibility: ["One", "Two", "Three"])

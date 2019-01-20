@@ -48,6 +48,7 @@
 		C5281FAA21F4B5E500BAD5B0 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FA921F4B5E500BAD5B0 /* empty.json */; };
 		C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */; };
 		C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAE21F4BDC300BAD5B0 /* Box.swift */; };
+		C5281FB121F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,7 @@
 		C5281FA921F4B5E500BAD5B0 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
 		C5281FAE21F4BDC300BAD5B0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */,
+				C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */,
 			);
 			path = "Experience Layer";
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */,
 				C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */,
 				C5281FA321F4922500BAD5B0 /* ExperienceViewControllerTest.swift in Sources */,
+				C5281FB121F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift in Sources */,
 				C5281F8A21F35AA300BAD5B0 /* TechnicalViewControllerTest.swift in Sources */,
 				C5281F9421F3977A00BAD5B0 /* TechnicalViewModelMock.swift in Sources */,
 				C5281F6721F12B6300BAD5B0 /* GistApiControllerTest.swift in Sources */,
