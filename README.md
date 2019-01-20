@@ -26,5 +26,6 @@ The app is an own CV app. The CV data store as a Gists file and show the details
 
 ### Swift architecture
 - The application is build with MVVM (Model-View-ViewModel) architecture and use coordinator patern for navigation.
+- Universal App that support different layouts for iPhone and iPad in horizental and vertical orientation.
 
 
