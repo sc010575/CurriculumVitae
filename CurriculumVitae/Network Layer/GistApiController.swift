@@ -81,7 +81,7 @@ class GistApiController: NSObject {
     }
 
     func populateCurriculumVitae(with url: String) {
-        guard let url = Constant.isUnitTest || Constant.isUITest ? URL(string: "http://localhost:8088/sc010575/feb733f8c6d6c38b9db4208fb7791567"): URL(string: url) else {
+        guard let url = Constant.isUnderTest ? URL(string: Constant.testFileUrl): URL(string: url) else {
             return
         }
         let urlRequest = URLRequest(url: url)
