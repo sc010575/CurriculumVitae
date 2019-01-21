@@ -41,6 +41,11 @@ class RootViewController: UIViewController {
                 self.profileView.isHidden = true
                 self.errorWithMessage(message: "No Network Connection")
                 return
+            }else if state == .dataError {
+                self.profileView.isHidden = true
+                self.errorWithMessage(message: "Data error")
+                return
+
             }
         }
         rootTableView.isHidden = true

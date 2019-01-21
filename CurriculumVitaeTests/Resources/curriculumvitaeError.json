@@ -1,0 +1,25 @@
+{
+    "profile_image": "https://i.ibb.co/wJM8tTs/IMG-20180809-0001.jpg",
+    "name": "Suman Chatterjee"
+    "address": "131 West Plaza, Townlane , Stanwell, Staines-Upon-Thames, TW19 7FH",
+    "nationality": "British",
+    "profile" : "Senior iOS
+    "phone": "+447856518020",
+    "email": "chatterjeesuman@gmail.com",
+    "web_site": "https://www.linkedin.com/in/chatterjeesuman/",
+    "technical_knowledge": {
+        "summary" : "Over 7+ years of experience in iOS,Swift and native iOS applications development both for iPhone and iPad.",
+        "strong" : [
+            "Commercial development experience with Swift in all version.",
+            "Experience developing SSL/HTTPS secure iOS Apps using Security framework and Keychain.",
+            "TDD and Continuous Integration best practice. BDD and test automation.",
+            "JSON, REST, SOAP Web services, OAuth services etc.",
+            "Experience on various architectural pattern such as MVVM, MVVM-C, MVC, Clean Swift and Viper, Protocol oriented programming."
+        ],
+        "development_tools" : "Xcode, Eclipse, IntelliJ, Visual Studio",
+        "configuration_management" : "GIT, SVN",
+        "programming_language" : "Swift,Objective-C,C, C++, Java, Android, Kotlin"
+    },
+    "results": []
+}
+

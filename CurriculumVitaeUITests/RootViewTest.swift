@@ -56,18 +56,27 @@ class RootViewTest: QuickSpec {
                         .expectOnPage()
                         .expectProfileName()
                 }
+                it("should display Technical Knowledge page when tap technical knowledge") {
+                    _ = RootViewPage(app)
+                        .expectOnPage()
+                        .tapTechnical()
+
+                    _ = TechnicalViewPage(app)
+                        .expectOnPage()
+                }
             }
-            it("should display Technical Knowledge page when tap technical knowledge") {
-                server?.respondToGists().respondToGistFile()
-                server?.start()
-                app?.launch()
+            context("when CurriculumVitae is fetched from the git hub") {
+                beforeEach {
+                    server?.respondToGists().respondToGistFileWithError()
+                    server?.start()
+                    app?.launch()
 
-                _ = RootViewPage(app)
-                    .expectOnPage()
-                    .tapTechnical()
+                }
+                it("should display profile detailes after successful call") {
 
-                _ = TechnicalViewPage(app)
-                    .expectOnPage()
+                    _ = RootViewPage(app)
+                        .expectDataErrorDialogue()
+                }
             }
         }
     }

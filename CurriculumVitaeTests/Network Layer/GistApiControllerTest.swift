@@ -41,10 +41,45 @@ class GistApiControllerTest: QuickSpec {
                         }
                     }
                 }
+                it("it returns a curriculumvitae model after a successful api call") {
+                    self.server.respondToGists().respondToGistFile().start()
+
+                    let downloadExpectiation = self.expectation(description: "Network service for gists main")
+
+                    self.apiController.onRetriveCurriculumVitae({ cv in
+                        expect(cv.name).to(equal("Suman Chatterjee"))
+                        downloadExpectiation.fulfill()
+                    }).populateCurriculumVitae(with: "cv")
+
+                    self.waitForExpectations(timeout: 10) { (error) in
+
+                        if let error = error {
+                            print("Error: \(error.localizedDescription)")
+                        }
+                    }
+                }
+                it("it returns a data error after a wrong json file") {
+                    self.server.respondToGists().respondToGistFileWithError().start()
+
+                    let downloadExpectiation = self.expectation(description: "Network service for gists main")
+
+                    self.apiController.onFailure({ state, _ in
+                        expect(state).to(equal(.dataError))
+                        downloadExpectiation.fulfill()
+                    }).populateCurriculumVitae(with: "cv")
+
+                    self.waitForExpectations(timeout: 10) { (error) in
+
+                        if let error = error {
+                            print("Error: \(error.localizedDescription)")
+                        }
+                    }
+                }
             }
         }
     }
 }
+
 
 class GistApiControllerTestError: QuickSpec {
     var server: MockServer!

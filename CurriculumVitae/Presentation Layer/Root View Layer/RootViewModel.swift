@@ -28,6 +28,8 @@ class RootViewModel {
     func populateCV(_ url: String) {
         apiController.onRetriveCurriculumVitae { curriculamVitae in
             self.curriculamVitae.value = curriculamVitae
+            }.onFailure { state, _  in
+                self.applicationState.value = state
         }.populateCurriculumVitae(with: url)
     }
 

@@ -62,6 +62,8 @@
 		C5281FCE21F4EC3200BAD5B0 /* ExperienceViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FCD21F4EC3200BAD5B0 /* ExperienceViewTest.swift */; };
 		C5281FD021F4ECFC00BAD5B0 /* ExperienceViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */; };
 		C5281FD221F4FB8600BAD5B0 /* ExperienceDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */; };
+		C5281FD421F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
+		C5281FD521F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -147,6 +149,7 @@
 		C5281FCD21F4EC3200BAD5B0 /* ExperienceViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewTest.swift; sourceTree = "<group>"; };
 		C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewPage.swift; sourceTree = "<group>"; };
 		C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsPage.swift; sourceTree = "<group>"; };
+		C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curriculumvitaeError.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +301,7 @@
 				C5281F6321F129F800BAD5B0 /* gistResponse.json */,
 				C5281F5621F113F900BAD5B0 /* curriculumvitae.json */,
 				C5281FA921F4B5E500BAD5B0 /* empty.json */,
+				C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -617,6 +621,7 @@
 				C5281FAA21F4B5E500BAD5B0 /* empty.json in Resources */,
 				C5281F6421F129F800BAD5B0 /* gistResponse.json in Resources */,
 				C5281F6921F1376600BAD5B0 /* gistErrorResponse.json in Resources */,
+				C5281FD421F659E100BAD5B0 /* curriculumvitaeError.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +633,7 @@
 				C5281FC621F4DF1800BAD5B0 /* empty.json in Resources */,
 				C5281FC421F4DF1800BAD5B0 /* gistResponse.json in Resources */,
 				C5281FC521F4DF1800BAD5B0 /* curriculumvitae.json in Resources */,
+				C5281FD521F659E100BAD5B0 /* curriculumvitaeError.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

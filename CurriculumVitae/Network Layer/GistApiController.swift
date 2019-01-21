@@ -70,11 +70,12 @@ class GistApiController: NSObject {
                         self.onSuccess?(s?.rawUrl ?? "")
                     }
 
+                }else {
+                    DispatchQueue.main.async {
+                        self.state = .dataError
+                        self.onFailure?(.dataError, nil)
+                    }
                 }
-            }
-            DispatchQueue.main.async {
-                self.state = .dataError
-                self.onFailure?(.dataError, nil)
             }
         })
         task.resume()
@@ -101,9 +102,12 @@ class GistApiController: NSObject {
                     DispatchQueue.main.async {
                         self.onRetriveCurriculumVitae?(curriculumVitae)
                     }
+                }else{
+                    DispatchQueue.main.async {
+                        self.onFailure?(.dataError,nil)
+                    }
                 }
             }
-
         })
         task.resume()
     }
