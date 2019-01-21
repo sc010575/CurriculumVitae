@@ -25,8 +25,11 @@ class RootViewController: UIViewController {
     @IBOutlet weak var rootTableView: UITableView!
     var viewModel: RootViewModel!
 
+    private var lastContentOffset: CGFloat = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        createShadow()
         viewModel.curriculamVitae.bind { curriculumVitae in
             self.profileView.displayProfile(curriculumVitae)
             self.title = curriculumVitae?.name
@@ -144,6 +147,38 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: "MoveToTechnical", sender: nil)
         default:
             return
+        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.lastContentOffset = scrollView.contentOffset.y
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (self.lastContentOffset < scrollView.contentOffset.y) {
+            // moved to top
+            showShadow(true)
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y == 0.0 {
+            showShadow(false)
+        }
+    }
+    
+    func createShadow() {
+        profileView.layer.zPosition = 5000.0
+        profileView.layer.shadowOpacity = 0.2
+        profileView.layer.shadowRadius = 14.0
+        profileView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        profileView.layer.shadowColor = UIColor.black.cgColor
+        showShadow(false)
+    }
+    
+    func showShadow(_ shouldShow: Bool) {
+        UIView.animate(withDuration: 2.0) {
+            self.profileView.layer.shadowOpacity = shouldShow ? 0.3 : 0.0
         }
     }
 }

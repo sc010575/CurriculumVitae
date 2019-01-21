@@ -11,7 +11,7 @@ import Quick
 @testable import CurriculumVitae
 
 final class SegueHelper {
-    
+
     static func segues(ofViewController viewController: UIViewController) -> [String] {
         let identifiers = (viewController.value(forKey: "storyboardSegueTemplates") as? [AnyObject])?.compactMap({ $0.value(forKey: "identifier") as? String }) ?? []
         return identifiers
@@ -43,7 +43,11 @@ final class RootViewControllerTest: QuickSpec {
                 }
                 it("has load the title is gists file loaded successfully") {
                     expect(viewController?.title).toEventually(equal("Suman Chatterjee"))
-                    
+
+                }
+                it("should have shadow opacity is zero initially") {
+                    expect(viewController?.profileView.layer.shadowOpacity).toEventually(equal(0))
+
                 }
                 it("should populate the profile view with right value") {
                     expect(viewController?.profileView.addressLabel.text).toEventually(equal("131 West Plaza, Townlane , Stanwell, Staines-Upon-Thames, TW19 7FH"))
@@ -52,22 +56,25 @@ final class RootViewControllerTest: QuickSpec {
 
                 }
                 it("should load right number of section") {
-                    let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
-                    defer { tearDown() }
                     expect(viewController?.rootTableView.numberOfSections).toEventually(equal(2))
                 }
                 it("should populate the professional summary") {
                     let cell = viewController?.rootTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? SummaryTableViewCell
-                    expect(cell?.summaryLabel.text).toEventually(equal("Summary not found."))
+                    if ((viewController?.viewModel.curriculamVitae.value?.profile) != nil) {
+                        expect(cell?.summaryLabel.text).toEventually(equal("Senior iOS Developer more than 19 years of software development experience. Skills included strong knowledge of iOS, Objective-C, Swift, C/C++, Agile development approach, Object-Oriented Analysis and Design, Object Oriented Programming, software integration and Product development."))
+                    }else{
+                        expect(cell?.summaryLabel.text).toEventually(equal("Summary not found."))
+
+                    }
                 }
-                it("should perform right segue when technical knowledge is selected")  {
+                it("should perform right segue when technical knowledge is selected") {
                     let indexPath = IndexPath(row: 0, section: 1)
                     viewController?.tableView((viewController?.rootTableView!)!, didSelectRowAt: indexPath)
-                    
+
                     let segue = SegueHelper.segues(ofViewController: viewController!)
                     expect(segue.contains("MoveToTechnical")).toEventually(beTrue())
                     expect(segue.count).to(equal(2))
-                    
+
                     let sender = viewController?.shouldPerformSegue(withIdentifier: "MoveToTechnical", sender: nil)
                     expect(sender).toEventually(beTrue())
                 }
