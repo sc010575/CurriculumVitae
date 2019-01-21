@@ -19,9 +19,9 @@ final class ExperienceViewControllerTest: QuickSpec {
             context("When ExperienceViewController is launched ") {
                 beforeEach {
                     viewController = storyboard.instantiateViewController(withIdentifier: "ExperienceViewController") as? ExperienceViewController
-                    let result1 = Result(company: "Company 1", icon: "A Icon", startDate: "01-02-2001", endDate: "", overview: "A goo job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
+                    let result1 = Result(company: "Company 1", icon: "A Icon", startDate: "2018-10-03", endDate: "", overview: "A good job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
 
-                    let result2 = Result(company: "Company 2", icon: "A new Icon", startDate: "01-02-2000", endDate: "31-12-2000", overview: "A goo job", title: "Developer", jobType: "Permanent", responsibility: ["One", "Two", "Three"])
+                    let result2 = Result(company: "Company 2", icon: "A new Icon", startDate: "2016-10-03", endDate: "2018-09-03", overview: "A good job", title: "Developer", jobType: "Permanent", responsibility: ["One", "Two", "Three"])
 
                     let technicals = [result1, result2]
                     viewController?.viewModel = ExperienceViewModel(technicals)
@@ -46,8 +46,8 @@ final class ExperienceViewControllerTest: QuickSpec {
 
                     let cell = viewController?.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? ExperienceListTableViewCell
                     expect(cell?.titleLabel.text).to(equal("Company 1"))
-                    expect(cell?.dateLabel.text).to(equal("Jan 20,2019 - Till Date"))
-                    expect(cell?.overviewLabel.text).to(equal("A goo job"))
+                    expect(cell?.dateLabel.text).to(equal("Oct 03,2018 - Till Date"))
+                    expect(cell?.overviewLabel.text).to(equal("A good job"))
 
                 }
             }
