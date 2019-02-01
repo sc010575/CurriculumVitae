@@ -41,7 +41,7 @@ class RootViewController: UIViewController {
                 self.profileView.isHidden = true
                 self.errorWithMessage(message: "No Network Connection")
                 return
-            }else if state == .dataError {
+            } else if state == .dataError {
                 self.profileView.isHidden = true
                 self.errorWithMessage(message: "Data error")
                 return
@@ -54,38 +54,19 @@ class RootViewController: UIViewController {
         viewModel.getGists()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "MoveToTechnical" {
-            guard let technicalVC = segue.destination as? TechnicalViewController,
-                let technical = viewModel.curriculamVitae.value?.technicalKnowledge else{
-                    return
-            }
-            let techViewModel = TechnicalViewModel(technical)
-            technicalVC.viewModel = techViewModel
-        }else if segue.identifier == "MoveToExperience" {
-            guard let experienceVC = segue.destination as? ExperienceViewController,
-                let experiences = viewModel.curriculamVitae.value?.results else{
-                    return
-            }
-            let experienceViewModel = ExperienceViewModel(experiences)
-            experienceVC.viewModel = experienceViewModel
-
-        }
-    }
-    
     func errorWithMessage(message: String) {
-        
+
         let alert = UIAlertController(title: "Service Error", message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
-        
+
     }
 }
 
 extension RootViewController: UITableViewDelegate, UITableViewDataSource {
 
-    
+
     func getSections() -> [[ElementsTitles]] {
         let result: [[ElementsTitles]] = [[.summary], [.technical, .experience]]
         return result
@@ -144,34 +125,26 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         }
 
         let title = sections[indexPath.section][indexPath.row]
-
-        switch title {
-        case .experience:
-            performSegue(withIdentifier: "MoveToExperience", sender: nil)
-        case .technical:
-            performSegue(withIdentifier: "MoveToTechnical", sender: nil)
-        default:
-            return
-        }
+        viewModel.useItemAtIndex(title, indexPath.row)
     }
-    
+
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.y
     }
-    
+
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (self.lastContentOffset < scrollView.contentOffset.y) {
             // moved to top
             showShadow(true)
         }
     }
-    
+
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y == 0.0 {
             showShadow(false)
         }
     }
-    
+
     func createShadow() {
         profileView.layer.zPosition = 5000.0
         profileView.layer.shadowOpacity = 0.2
@@ -180,7 +153,7 @@ extension RootViewController: UITableViewDelegate, UITableViewDataSource {
         profileView.layer.shadowColor = UIColor.black.cgColor
         showShadow(false)
     }
-    
+
     func showShadow(_ shouldShow: Bool) {
         UIView.animate(withDuration: 2.0) {
             self.profileView.layer.shadowOpacity = shouldShow ? 0.3 : 0.0

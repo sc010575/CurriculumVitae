@@ -25,7 +25,7 @@ final class ExperienceViewControllerTest: QuickSpec {
 
                     let technicals = [result1, result2]
                     viewController?.viewModel = ExperienceViewModel(technicals)
-                    viewController?.preloadView()
+                  //  viewController?.preloadView()
                     let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
                     defer { tearDown() }
 

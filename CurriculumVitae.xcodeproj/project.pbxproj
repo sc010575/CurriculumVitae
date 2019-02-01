@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7228F92F16974A076079C8B9 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2A388E79116841C6F5031 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework */; };
+		C5258CF62204943900108813 /* RootViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5258CF52204943900108813 /* RootViewCoordinator.swift */; };
+		C5258CF82204949300108813 /* RootDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5258CF72204949300108813 /* RootDetailCoordinator.swift */; };
 		C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */; };
 		C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2D21F1019E00BAD5B0 /* RootViewController.swift */; };
 		C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F2F21F1019E00BAD5B0 /* Main.storyboard */; };
@@ -95,6 +97,8 @@
 		91D6BE0B2164748F2E738891 /* Pods-CurriculumVitae.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae.release.xcconfig"; sourceTree = "<group>"; };
 		92036B27B586D8EA5722D9DD /* Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurriculumVitae_CurriculumVitaeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5258CF52204943900108813 /* RootViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewCoordinator.swift; sourceTree = "<group>"; };
+		C5258CF72204949300108813 /* RootDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDetailCoordinator.swift; sourceTree = "<group>"; };
 		C5281F2821F1019E00BAD5B0 /* CurriculumVitae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculumVitae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5281F2D21F1019E00BAD5B0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				C5281F7621F1F56D00BAD5B0 /* Coordinator.swift */,
+				C5258CF52204943900108813 /* RootViewCoordinator.swift */,
+				C5258CF72204949300108813 /* RootDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -814,6 +820,7 @@
 				C5281F7721F1F56D00BAD5B0 /* Coordinator.swift in Sources */,
 				C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */,
 				C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */,
+				C5258CF62204943900108813 /* RootViewCoordinator.swift in Sources */,
 				C5281F8C21F35D5D00BAD5B0 /* TechnicalViewModel.swift in Sources */,
 				C5281F7921F26CB500BAD5B0 /* UIImageView+LoadImage.swift in Sources */,
 				C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */,
@@ -822,6 +829,7 @@
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
 				C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
+				C5258CF82204949300108813 /* RootDetailCoordinator.swift in Sources */,
 				C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */,
 				C5281F7C21F32CFA00BAD5B0 /* SummaryTableViewCell.swift in Sources */,
 				C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */,

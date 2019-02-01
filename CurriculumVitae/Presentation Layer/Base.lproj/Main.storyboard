@@ -137,29 +137,11 @@
                     <connections>
                         <outlet property="profileView" destination="or7-v8-N27" id="1SS-Rj-Epk"/>
                         <outlet property="rootTableView" destination="HoV-Uh-8Yt" id="UiC-Yf-wnJ"/>
-                        <segue destination="u1r-gu-aOy" kind="show" identifier="MoveToTechnical" id="OhJ-pp-xO5"/>
-                        <segue destination="LJ1-ou-Y20" kind="show" identifier="MoveToExperience" id="uDU-av-ktM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-682.39999999999998" y="196.55172413793105"/>
-        </scene>
-        <!--Experience-->
-        <scene sceneID="BYS-pW-FRg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Experience" id="LJ1-ou-Y20" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JVW-4N-JLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-61" y="267"/>
-        </scene>
-        <!--Technical-->
-        <scene sceneID="CWA-l3-Wfd">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Technical" storyboardName="Technical" id="u1r-gu-aOy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pUi-0h-Mf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="342" y="-172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DF1-0c-2Dd">

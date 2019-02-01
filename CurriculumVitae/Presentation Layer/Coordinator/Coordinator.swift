@@ -30,22 +30,3 @@ class ApplicationCoordinator: Coordinator {
         window.makeKeyAndVisible()
     }
 }
-
-class RootViewCoordinator: Coordinator {
-    private let presenter: UINavigationController
-    private var rootViewController: RootViewController?
-    init(presenter: UINavigationController) {
-        self.presenter = presenter
-    }
-
-    func start() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        guard let rootViewController = storyBoard.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController else { return }
-        rootViewController.title = "Loading..."
-        let apiController = GistApiController()
-        let viewModel = RootViewModel(apiController)
-        rootViewController.viewModel = viewModel
-        presenter.pushViewController(rootViewController, animated: true)
-        self.rootViewController = rootViewController
-    }
-}
