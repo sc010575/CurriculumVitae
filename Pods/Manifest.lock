@@ -4,17 +4,27 @@ PODS:
   - GCDWebServer/Core (3.4.2)
   - Nimble (7.3.1)
   - Quick (1.3.2)
+  - ReachabilitySwift (4.3.1)
 
 DEPENDENCIES:
   - GCDWebServer (~> 3.0)
   - Nimble
   - Quick
+  - ReachabilitySwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GCDWebServer
+    - Nimble
+    - Quick
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
 
-PODFILE CHECKSUM: 72985a6de07433ed93ae8a547c30813fe412d91d
+PODFILE CHECKSUM: 1b6e873480fa840a2f957cf0bba3a5fd1820dc9d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0

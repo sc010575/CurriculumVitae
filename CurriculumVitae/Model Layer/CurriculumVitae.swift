@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CurriculumVitae:Decodable {
+struct CurriculumVitae:Model {
     let profileImage:String
     let name:String
     let profile:String
@@ -17,10 +17,10 @@ struct CurriculumVitae:Decodable {
     let webSite:String?
     let address:String
     let technicalKnowledge:Technical?
-    let results:[Result]
+    let results:[Resultdata]
 }
 
-struct Result :Decodable {
+struct Resultdata :Model {
     let company:String
     let icon:String
     let startDate:String
@@ -31,7 +31,7 @@ struct Result :Decodable {
     let responsibility:[String?]
 }
 
-struct Technical : Decodable {
+struct Technical : Model {
     let summary:String?
     let strong:[String?]
     let developmentTools:String?

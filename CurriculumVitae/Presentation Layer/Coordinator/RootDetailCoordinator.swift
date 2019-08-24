@@ -11,7 +11,7 @@ import UIKit
 
 enum Commitment {
     case technical(Technical)
-    case experience([Result])
+    case experience([Resultdata])
     case none
 }
 

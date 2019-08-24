@@ -22,7 +22,7 @@ class ExperienceListTableViewCell: CVTableViewCell {
         super.awakeFromNib()
     }
 
-    func configureCell(_ experience: Result) {
+    func configureCell(_ experience: Resultdata) {
         titleLabel.text = experience.company
         overviewLabel.text = experience.overview
         jobTitle.text = experience.title
@@ -34,7 +34,7 @@ class ExperienceListTableViewCell: CVTableViewCell {
 }
 
 private extension ExperienceListTableViewCell {
-    func formattedDate(_ experience: Result) -> String {
+    func formattedDate(_ experience: Resultdata) -> String {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd"
 

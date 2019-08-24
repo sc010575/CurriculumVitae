@@ -8,107 +8,76 @@
 
 import Foundation
 
+protocol ApiController {
+    func onSuccess(_ handler: @escaping (_ url: String) -> Void) -> ApiController
+    func onFailure(_ handler: @escaping (_ result: State, _ error: Error?) -> Void) -> ApiController
+    func onRetriveCurriculumVitae(_ handler: @escaping (_ curriculumVitae: CurriculumVitae) -> Void) -> ApiController
+
+    func gistFile()
+    func populateCurriculumVitae(with url: String)
+}
+
 enum State {
     case notFetchededYet
     case loading
     case noResults
     case dataError
-    case notReachable
     case success
 }
 
 
-class GistApiController: NSObject {
+class GistApiController: NSObject, ApiController {
 
     private(set) var onSuccess: ((_ url: String) -> Void)?
     private(set) var onFailure: ((_ result: State, _ error: Error?) -> Void)?
-    private(set) var onRetriveCurriculumVitae: ((_ curriculumVitae:CurriculumVitae) -> Void)?
+    private(set) var onRetriveCurriculumVitae: ((_ curriculumVitae: CurriculumVitae) -> Void)?
     private(set) var state: State = .notFetchededYet
 
     @discardableResult
-    func onSuccess(_ handler: @escaping (_ url: String) -> Void) -> GistApiController {
+    func onSuccess(_ handler: @escaping (_ url: String) -> Void) -> ApiController {
         self.onSuccess = handler
 
         return self
     }
 
     @discardableResult
-    func onFailure(_ handler: @escaping (_ result: State, _ error: Error?) -> Void) -> GistApiController {
+    func onFailure(_ handler: @escaping (_ result: State, _ error: Error?) -> Void) -> ApiController {
         self.onFailure = handler
 
         return self
     }
 
     @discardableResult
-    func onRetriveCurriculumVitae(_ handler: @escaping (_ curriculumVitae:CurriculumVitae) -> Void) -> GistApiController {
+    func onRetriveCurriculumVitae(_ handler: @escaping (_ curriculumVitae: CurriculumVitae) -> Void) -> ApiController {
         self.onRetriveCurriculumVitae = handler
-        
+
         return self
     }
 
     func gistFile() {
-        
-        guard currentReachabilityStatus != .notReachable else {
-            self.onFailure?(.notReachable, nil)
-            return
-        }
-        guard let baseUrl = Constant.baseURL else { return }
-        let url = baseUrl.appendingPathComponent(Constant.QueryType.gists.rawValue).appendingPathComponent(Constant.fileId)
-        let urlRequest = URLRequest(url: url)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        state = .loading
-        let task = session.dataTask(with: urlRequest, completionHandler: {
-            (data, response, error) in
-            if error != nil, let error = error {
-                self.onFailure?(.noResults, error)
-            } else {
-                if let httpResponse = response as? HTTPURLResponse,
-                    httpResponse.statusCode == 200, let data = data {
-                    if let gistMain: GistMain = ParseJson.parse(data: data) {
-                        let s = gistMain.files["CurriculumVitae"]
-                        self.onSuccess?(s?.rawUrl ?? "")
-                    }
 
-                }else {
-                    DispatchQueue.main.async {
-                        self.state = .dataError
-                        self.onFailure?(.dataError, nil)
-                    }
-                }
+        let urlRequest = Request(path: Constant.QueryType.gists.rawValue, parameters: [Constant.fileId])
+        Network.shared.send(urlRequest) { (result: Result<GistMain, Error>) in
+            switch result {
+            case .success(let gistMain):
+                let s = gistMain.files["CurriculumVitae"]
+                self.onSuccess?(s?.rawUrl ?? "")
+            case .failure(let error):
+                self.onFailure?(.dataError, error)
             }
-        })
-        task.resume()
+        }
     }
 
     func populateCurriculumVitae(with url: String) {
-        guard let url = Constant.isUnderTest ? URL(string: Constant.testFileUrl): URL(string: url) else {
-            return
-        }
-        let urlRequest = URLRequest(url: url)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-
-        let task = session.dataTask(with: urlRequest, completionHandler: {
-            (data, response, error) in
-
-            if error != nil, let error = error {
-                self.onFailure?(.noResults, error)
-
-            } else {
-                guard let data = data else { return }
-
-                if let curriculumVitae: CurriculumVitae = ParseJson.parse(data: data) {
-                    DispatchQueue.main.async {
-                        self.onRetriveCurriculumVitae?(curriculumVitae)
-                    }
-                }else{
-                    DispatchQueue.main.async {
-                        self.onFailure?(.dataError,nil)
-                    }
-                }
+        guard let cvURL = URL(string: url) else { return }
+        let urlRequest = URLRequest(url: cvURL)
+        Network.shared.send(urlRequest) { (result: Result<CurriculumVitae, Error>) in
+            switch result {
+            case .success(let cv):
+                self.onRetriveCurriculumVitae?(cv)
+            case .failure(let error):
+                self.onFailure?(.dataError, error)
             }
-        })
-        task.resume()
+        }
     }
 }

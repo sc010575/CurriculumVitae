@@ -49,7 +49,6 @@
 		C5281FA321F4922500BAD5B0 /* ExperienceViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */; };
 		C5281FA821F4B41F00BAD5B0 /* CurriculumVitaeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FA721F4B41F00BAD5B0 /* CurriculumVitaeTest.swift */; };
 		C5281FAA21F4B5E500BAD5B0 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FA921F4B5E500BAD5B0 /* empty.json */; };
-		C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */; };
 		C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FAE21F4BDC300BAD5B0 /* Box.swift */; };
 		C5281FB121F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */; };
 		C5281FC221F4DEE300BAD5B0 /* RootViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FC121F4DEE300BAD5B0 /* RootViewTest.swift */; };
@@ -66,6 +65,9 @@
 		C5281FD221F4FB8600BAD5B0 /* ExperienceDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */; };
 		C5281FD421F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
 		C5281FD521F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
+		C552FAD6230E95F500F0CBA9 /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */; };
+		C552FAD82310E5D100F0CBA9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552FAD72310E5D100F0CBA9 /* Log.swift */; };
+		C5A4F2E02310FE5300EA9013 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */; };
 		D0C37BECFDBED53BC639B6EF /* Pods_CurriculumVitae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08001CDF19DB195E05897F7F /* Pods_CurriculumVitae.framework */; };
 		D9AD9B413BD11B7B9B29C83E /* Pods_CurriculumVitae_CurriculumVitaeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */; };
 /* End PBXBuildFile section */
@@ -142,7 +144,6 @@
 		C5281FA221F4922500BAD5B0 /* ExperienceViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewControllerTest.swift; sourceTree = "<group>"; };
 		C5281FA721F4B41F00BAD5B0 /* CurriculumVitaeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVitaeTest.swift; sourceTree = "<group>"; };
 		C5281FA921F4B5E500BAD5B0 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
-		C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
 		C5281FAE21F4BDC300BAD5B0 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		C5281FB021F4C53C00BAD5B0 /* ExperienceDetailsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsViewControllerTest.swift; sourceTree = "<group>"; };
 		C5281FB621F4DE5E00BAD5B0 /* CurriculumVitaeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurriculumVitaeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +155,9 @@
 		C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewPage.swift; sourceTree = "<group>"; };
 		C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsPage.swift; sourceTree = "<group>"; };
 		C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curriculumvitaeError.json; sourceTree = "<group>"; };
+		C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityHandler.swift; sourceTree = "<group>"; };
+		C552FAD72310E5D100F0CBA9 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				C5281F5321F1126500BAD5B0 /* Serialize.swift */,
+				C552FAD72310E5D100F0CBA9 /* Log.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -331,7 +336,8 @@
 			children = (
 				C5281F5F21F11F8700BAD5B0 /* GistApiController.swift */,
 				C5281F7821F26CB500BAD5B0 /* UIImageView+LoadImage.swift */,
-				C5281FAB21F4BBD500BAD5B0 /* ReachabilityStatus.swift */,
+				C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */,
+				C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -508,7 +514,6 @@
 				C5281F2521F1019E00BAD5B0 /* Frameworks */,
 				C5281F2621F1019E00BAD5B0 /* Resources */,
 				7AEAACB6169021C1AACA9A2D /* [CP] Embed Pods Frameworks */,
-				FE46D72CDA58156B66F5EFAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -528,7 +533,6 @@
 				C5281F3921F101A000BAD5B0 /* Frameworks */,
 				C5281F3A21F101A000BAD5B0 /* Resources */,
 				83CE16CDA333388F872FB965 /* [CP] Embed Pods Frameworks */,
-				81E101CA8DCDCB19785E3D29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -549,7 +553,6 @@
 				C5281FB321F4DE5E00BAD5B0 /* Frameworks */,
 				C5281FB421F4DE5E00BAD5B0 /* Resources */,
 				8DE6AA2C264E1A61CDF79EFE /* [CP] Embed Pods Frameworks */,
-				13A26C02B4549C961EBA2856 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -646,49 +649,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13A26C02B4549C961EBA2856 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7AEAACB6169021C1AACA9A2D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81E101CA8DCDCB19785E3D29 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		83CE16CDA333388F872FB965 /* [CP] Embed Pods Frameworks */ = {
@@ -697,20 +673,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeTests/Pods-CurriculumVitae-CurriculumVitaeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8DE6AA2C264E1A61CDF79EFE /* [CP] Embed Pods Frameworks */ = {
@@ -719,20 +697,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9FDD9654F63FFB280BA5DA10 /* [CP] Check Pods Manifest.lock */ = {
@@ -789,21 +769,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE46D72CDA58156B66F5EFAF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurriculumVitae/Pods-CurriculumVitae-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -812,25 +777,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5281F9721F3A8A600BAD5B0 /* ExperienceViewController.swift in Sources */,
+				C552FAD6230E95F500F0CBA9 /* ConnectivityHandler.swift in Sources */,
 				C5281F9E21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift in Sources */,
 				C5281F6221F1202E00BAD5B0 /* Constant.swift in Sources */,
 				C5281F7421F1E56E00BAD5B0 /* ProfileView.swift in Sources */,
 				C5281F8021F3378200BAD5B0 /* OtherTableViewCell.swift in Sources */,
 				C5281FA021F4822000BAD5B0 /* ExperienceDetailsViewController.swift in Sources */,
 				C5281F7721F1F56D00BAD5B0 /* Coordinator.swift in Sources */,
+				C5A4F2E02310FE5300EA9013 /* NetworkHandler.swift in Sources */,
 				C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */,
 				C5281F5121F1120400BAD5B0 /* GistMain.swift in Sources */,
 				C5258CF62204943900108813 /* RootViewCoordinator.swift in Sources */,
 				C5281F8C21F35D5D00BAD5B0 /* TechnicalViewModel.swift in Sources */,
 				C5281F7921F26CB500BAD5B0 /* UIImageView+LoadImage.swift in Sources */,
 				C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */,
+				C552FAD82310E5D100F0CBA9 /* Log.swift in Sources */,
 				C5281F8521F3565E00BAD5B0 /* TechnicalViewController.swift in Sources */,
 				C5281F4F21F1117F00BAD5B0 /* CurriculumVitae.swift in Sources */,
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
 				C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
 				C5258CF82204949300108813 /* RootDetailCoordinator.swift in Sources */,
-				C5281FAC21F4BBD500BAD5B0 /* ReachabilityStatus.swift in Sources */,
 				C5281F7C21F32CFA00BAD5B0 /* SummaryTableViewCell.swift in Sources */,
 				C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */,
 				C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */,
@@ -1026,7 +993,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G9KR27J78;
+				DEVELOPMENT_TEAM = 8VT29F6R7U;
 				INFOPLIST_FILE = CurriculumVitae/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1034,7 +1001,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1045,7 +1012,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G9KR27J78;
+				DEVELOPMENT_TEAM = 8VT29F6R7U;
 				INFOPLIST_FILE = CurriculumVitae/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1053,7 +1020,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

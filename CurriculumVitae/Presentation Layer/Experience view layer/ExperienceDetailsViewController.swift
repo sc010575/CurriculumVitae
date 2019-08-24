@@ -12,7 +12,7 @@ class ExperienceDetailsViewController: UIViewController {
     @IBOutlet weak var jobTitleLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var responseLabel: UILabel!
-    var experience: Result!
+    var experience: Resultdata!
     override func viewDidLoad() {
         super.viewDidLoad()
         buildExperience()

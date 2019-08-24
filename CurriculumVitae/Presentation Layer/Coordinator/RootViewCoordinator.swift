@@ -15,6 +15,7 @@ class RootViewCoordinator: Coordinator {
     
     weak var delegate: RootViewModelCoordinatorDelegate?
     private var rootDetailCoordinator: RootDetailCoordinator?
+    private var viewModel:RootViewModel?
     
     init(presenter: UINavigationController) {
         self.presenter = presenter
@@ -26,17 +27,21 @@ class RootViewCoordinator: Coordinator {
         guard let rootViewController = storyBoard.instantiateViewController(withIdentifier: "RootViewController") as? RootViewController else { return }
         rootViewController.title = "Loading..."
         let apiController = GistApiController()
-        let viewModel = RootViewModel(apiController)
-        viewModel.coordinatorDelegate = self
+        viewModel = RootViewModel(apiController)
+        viewModel?.coordinatorDelegate = self
         rootViewController.viewModel = viewModel
         presenter.pushViewController(rootViewController, animated: true)
         self.rootViewController = rootViewController
+    }
+    
+    func checkConnectivity() {
+        viewModel?.getGists()
     }
 }
 
 extension RootViewCoordinator: RootViewModelCoordinatorDelegate
 {
-    func RootViewModelDidSelectExperienceData(_ viewModel: RootViewModel, data: [Result]) {
+    func RootViewModelDidSelectExperienceData(_ viewModel: RootViewModel, data: [Resultdata]) {
         let commitment = Commitment.experience(data)
         rootDetailCoordinator?.setCommitment(commitment)
         rootDetailCoordinator?.start()

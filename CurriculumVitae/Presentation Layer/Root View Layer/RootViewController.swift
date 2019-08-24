@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 enum ElementsTitles: String {
     case summary = "Professional summary"
     case technical = "Technical knowledge"
@@ -23,7 +22,7 @@ class RootViewController: UIViewController {
 
     @IBOutlet weak var profileView: ProfileView!
     @IBOutlet weak var rootTableView: UITableView!
-    var viewModel: RootViewModel!
+    var viewModel: RootViewModelProtocol!
 
     private var lastContentOffset: CGFloat = 0
 
@@ -37,15 +36,10 @@ class RootViewController: UIViewController {
             self.rootTableView.reloadData()
         }
         viewModel.applicationState.bind { state in
-            if state == .notReachable {
-                self.profileView.isHidden = true
-                self.errorWithMessage(message: "No Network Connection")
-                return
-            } else if state == .dataError {
+            if state == .dataError {
                 self.profileView.isHidden = true
                 self.errorWithMessage(message: "Data error")
                 return
-
             }
         }
         rootTableView.isHidden = true

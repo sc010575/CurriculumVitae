@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct GistMain:Decodable {
+struct GistMain:Model {
     let files:[String:fileDetails]
 }
 
-struct fileDetails:Decodable {
+struct fileDetails:Model {
     let rawUrl:String
 }

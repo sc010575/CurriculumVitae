@@ -24,7 +24,7 @@ class ExperienceViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoveToExperienceDetails" {
-            guard let experience = sender as? Result,
+            guard let experience = sender as? Resultdata,
             let exDetailsVC = segue.destination as? ExperienceDetailsViewController else { return }
             exDetailsVC.experience = experience
         }

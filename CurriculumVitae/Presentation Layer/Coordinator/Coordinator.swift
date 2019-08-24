@@ -13,20 +13,30 @@ protocol Coordinator {
     func start()
 }
 
-class ApplicationCoordinator: Coordinator {
-    let window: UIWindow
-    let navigationController: UINavigationController
-    let rootViewCoordinator: RootViewCoordinator
+class ApplicationCoordinator: Coordinator, ConnectivityListener {
+    
+    func ConnectivityStatusDidChanged() {
+        rootViewCoordinator.checkConnectivity()
+    }
+    
+    private let window: UIWindow
+    private let navigationController: UINavigationController
+    private let rootViewCoordinator: RootViewCoordinator
+    private let connectivityHandler: ConnectivityHandler
 
-    init(window: UIWindow) {
+    init(window: UIWindow, connectivityHandler:ConnectivityHandler = ConnectivityHandler()) {
         self.window = window
         navigationController = UINavigationController()
         navigationController.navigationBar.prefersLargeTitles = true
         rootViewCoordinator = RootViewCoordinator(presenter: navigationController)
+        self.connectivityHandler = connectivityHandler
+        self.connectivityHandler.addListener(listener: self)
     }
     func start() {
         window.rootViewController = navigationController
+        connectivityHandler.startNotifier()
         rootViewCoordinator.start()
         window.makeKeyAndVisible()
     }
+    
 }

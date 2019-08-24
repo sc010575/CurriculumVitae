@@ -31,6 +31,8 @@ extension ProfileView {
                 imageView.loadImage(url: url, completion: {
                     self.loadingIndicator?.stopAnimating()
                     self.imageView.layer.cornerRadius = 10
+                    self.imageView.clipsToBounds = true
+                    self.imageView.layer.masksToBounds = true
                 })
             }
             addressLabel.text = curriculmVitae.address

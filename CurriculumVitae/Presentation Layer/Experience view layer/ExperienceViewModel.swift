@@ -10,9 +10,9 @@ import Foundation
 
 class ExperienceViewModel {
 
-    private (set) var experiences: Box<[Result]> = Box([])
+    private (set) var experiences: Box<[Resultdata]> = Box([])
 
-    init(_ experiences: [Result]) {
+    init(_ experiences: [Resultdata]) {
         self.experiences.value = experiences
     }
 

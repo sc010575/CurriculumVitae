@@ -11,18 +11,29 @@ import Foundation
 protocol RootViewModelCoordinatorDelegate: class
 {
     func RootViewModelDidSelectTechnicalData(_ viewModel: RootViewModel, data: Technical)
-    func RootViewModelDidSelectExperienceData(_ viewModel: RootViewModel, data: [Result])
+    func RootViewModelDidSelectExperienceData(_ viewModel: RootViewModel, data: [Resultdata])
 }
 
+protocol RootViewModelProtocol:class {
 
+    var apiController: ApiController { get set}
+    var curriculamVitae:Box<CurriculumVitae?> { get set }
+    var coordinatorDelegate: RootViewModelCoordinatorDelegate? { get set}
+    var applicationState: Box<State> { get set}
+    
+    func getGists()
+    func summary(for section: ElementsTitles) -> String
+    func useItemAtIndex(_ section: ElementsTitles, _ index: Int)
+}
 
-class RootViewModel {
-    private (set) var apiController: GistApiController!
-    private (set) var curriculamVitae: Box<CurriculumVitae?> = Box(nil)
-    private (set) var applicationState: Box<State> = Box(State.notFetchededYet)
+class RootViewModel:RootViewModelProtocol {
+    var apiController: ApiController
+    var curriculamVitae: Box<CurriculumVitae?> = Box(nil)
+    var applicationState: Box<State> = Box(State.notFetchededYet)
+    
     weak var coordinatorDelegate: RootViewModelCoordinatorDelegate?
 
-    init(_ apiController: GistApiController) {
+    init(_ apiController:ApiController) {
         self.apiController = apiController
     }
 
