@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7228F92F16974A076079C8B9 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA2A388E79116841C6F5031 /* Pods_CurriculumVitae_CurriculumVitaeUITests.framework */; };
 		C5258CF62204943900108813 /* RootViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5258CF52204943900108813 /* RootViewCoordinator.swift */; };
-		C5258CF82204949300108813 /* RootDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5258CF72204949300108813 /* RootDetailCoordinator.swift */; };
 		C5281F2C21F1019E00BAD5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */; };
 		C5281F2E21F1019E00BAD5B0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281F2D21F1019E00BAD5B0 /* RootViewController.swift */; };
 		C5281F3121F1019E00BAD5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5281F2F21F1019E00BAD5B0 /* Main.storyboard */; };
@@ -65,6 +64,9 @@
 		C5281FD221F4FB8600BAD5B0 /* ExperienceDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */; };
 		C5281FD421F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
 		C5281FD521F659E100BAD5B0 /* curriculumvitaeError.json in Resources */ = {isa = PBXBuildFile; fileRef = C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */; };
+		C53B54E82313E9BF00EBA98F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B54E72313E9BF00EBA98F /* Request.swift */; };
+		C53B54EA2313E9F200EBA98F /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B54E92313E9F200EBA98F /* RequestTest.swift */; };
+		C53B54EF2315030600EBA98F /* RootViewModelCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53B54EE2315030600EBA98F /* RootViewModelCoordinatorTest.swift */; };
 		C552FAD6230E95F500F0CBA9 /* ConnectivityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */; };
 		C552FAD82310E5D100F0CBA9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552FAD72310E5D100F0CBA9 /* Log.swift */; };
 		C5A4F2E02310FE5300EA9013 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */; };
@@ -100,7 +102,6 @@
 		92036B27B586D8EA5722D9DD /* Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurriculumVitae-CurriculumVitaeUITests/Pods-CurriculumVitae-CurriculumVitaeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A008FCE2FBC845E9D5C5AA63 /* Pods_CurriculumVitae_CurriculumVitaeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurriculumVitae_CurriculumVitaeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5258CF52204943900108813 /* RootViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewCoordinator.swift; sourceTree = "<group>"; };
-		C5258CF72204949300108813 /* RootDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDetailCoordinator.swift; sourceTree = "<group>"; };
 		C5281F2821F1019E00BAD5B0 /* CurriculumVitae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurriculumVitae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5281F2B21F1019E00BAD5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5281F2D21F1019E00BAD5B0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +156,9 @@
 		C5281FCF21F4ECFC00BAD5B0 /* ExperienceViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewPage.swift; sourceTree = "<group>"; };
 		C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsPage.swift; sourceTree = "<group>"; };
 		C5281FD321F659E100BAD5B0 /* curriculumvitaeError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curriculumvitaeError.json; sourceTree = "<group>"; };
+		C53B54E72313E9BF00EBA98F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C53B54E92313E9F200EBA98F /* RequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
+		C53B54EE2315030600EBA98F /* RootViewModelCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelCoordinatorTest.swift; sourceTree = "<group>"; };
 		C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityHandler.swift; sourceTree = "<group>"; };
 		C552FAD72310E5D100F0CBA9 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
@@ -338,6 +342,7 @@
 				C5281F7821F26CB500BAD5B0 /* UIImageView+LoadImage.swift */,
 				C552FAD5230E95F500F0CBA9 /* ConnectivityHandler.swift */,
 				C5A4F2DF2310FE5300EA9013 /* NetworkHandler.swift */,
+				C53B54E72313E9BF00EBA98F /* Request.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				C5281F6621F12B6300BAD5B0 /* GistApiControllerTest.swift */,
+				C53B54E92313E9F200EBA98F /* RequestTest.swift */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -353,6 +359,7 @@
 		C5281F6A21F1CF8000BAD5B0 /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				C53B54ED231502E600EBA98F /* Coordinator */,
 				C5281FA121F491FB00BAD5B0 /* Experience Layer */,
 				C5281F8821F35A8600BAD5B0 /* Technical View layer */,
 				C5281F6B21F1CFB700BAD5B0 /* Root View Layer */,
@@ -384,7 +391,6 @@
 			children = (
 				C5281F7621F1F56D00BAD5B0 /* Coordinator.swift */,
 				C5258CF52204943900108813 /* RootViewCoordinator.swift */,
-				C5258CF72204949300108813 /* RootDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -500,6 +506,14 @@
 				C5281FD121F4FB8600BAD5B0 /* ExperienceDetailsPage.swift */,
 			);
 			path = PageObjects;
+			sourceTree = "<group>";
+		};
+		C53B54ED231502E600EBA98F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C53B54EE2315030600EBA98F /* RootViewModelCoordinatorTest.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -777,6 +791,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5281F9721F3A8A600BAD5B0 /* ExperienceViewController.swift in Sources */,
+				C53B54E82313E9BF00EBA98F /* Request.swift in Sources */,
 				C552FAD6230E95F500F0CBA9 /* ConnectivityHandler.swift in Sources */,
 				C5281F9E21F3B6DE00BAD5B0 /* ExperienceListTableViewCell.swift in Sources */,
 				C5281F6221F1202E00BAD5B0 /* Constant.swift in Sources */,
@@ -797,7 +812,6 @@
 				C5281F5421F1126500BAD5B0 /* Serialize.swift in Sources */,
 				C5281FAF21F4BDC300BAD5B0 /* Box.swift in Sources */,
 				C5281F7221F1D09900BAD5B0 /* RootViewModel.swift in Sources */,
-				C5258CF82204949300108813 /* RootDetailCoordinator.swift in Sources */,
 				C5281F7C21F32CFA00BAD5B0 /* SummaryTableViewCell.swift in Sources */,
 				C5281F9B21F3A90F00BAD5B0 /* ExperienceViewModel.swift in Sources */,
 				C5281F6021F11F8700BAD5B0 /* GistApiController.swift in Sources */,
@@ -809,6 +823,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5281F6E21F1D03200BAD5B0 /* RootViewControllerTest.swift in Sources */,
+				C53B54EF2315030600EBA98F /* RootViewModelCoordinatorTest.swift in Sources */,
+				C53B54EA2313E9F200EBA98F /* RequestTest.swift in Sources */,
 				C5281F5C21F113F900BAD5B0 /* MockServer.swift in Sources */,
 				C5281F9121F3847700BAD5B0 /* Viewcontroller+Test.swift in Sources */,
 				C5281F5D21F113F900BAD5B0 /* Fixtures.swift in Sources */,
@@ -1001,7 +1017,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1020,7 +1036,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dreamapps.CurriculumVitae;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

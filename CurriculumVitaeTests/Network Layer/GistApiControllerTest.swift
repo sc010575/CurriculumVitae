@@ -30,7 +30,7 @@ class GistApiControllerTest: QuickSpec {
                     let downloadExpectiation = self.expectation(description: "Network service for gists main")
 
                     self.apiController.onSuccess { url in
-                        expect(url).to(equal("https://gist.githubusercontent.com/sc010575/feb733f8c6d6c38b9db4208fb7791567/raw/75228d855b7c9069645ef8e1271aded319bc53c4/CurriculumVitae"))
+                        expect(url).to(equal("http://localhost:8088/gists/feb733f8c6d6c38b9db4208fb7791567/CurriculumVitae"))
                         downloadExpectiation.fulfill()
                     }.gistFile()
 
@@ -49,7 +49,7 @@ class GistApiControllerTest: QuickSpec {
                     self.apiController.onRetriveCurriculumVitae({ cv in
                         expect(cv.name).to(equal("Suman Chatterjee"))
                         downloadExpectiation.fulfill()
-                    }).populateCurriculumVitae(with: "cv")
+                    }).populateCurriculumVitae(with: Constant.testFileUrl)
 
                     self.waitForExpectations(timeout: 10) { (error) in
 

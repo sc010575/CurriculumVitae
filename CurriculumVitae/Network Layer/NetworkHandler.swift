@@ -12,39 +12,6 @@ protocol NetworkUseCase {
     
 }
 
-protocol Requestable {
-    func urlRequest() -> URLRequest
-}
-
-extension URLRequest: Requestable {
-    func urlRequest() -> URLRequest { return self }
-}
-
-struct Request: Requestable {
-    let path: String
-    let parameters:[String]?
-    let method: String
-
-    init(path: String, parameters:[String]? = [], method: String = "GET") {
-        self.path = path
-        self.method = method
-        self.parameters = parameters
-    }
-
-    func urlRequest() -> URLRequest {
-        guard let baseUrl = Constant.baseURL else {
-            return URLRequest(url: URL(fileURLWithPath: ""))
-        }
-        var finalUrl = baseUrl.appendingPathComponent(path)
-        self.parameters?.forEach{ finalUrl = finalUrl.appendingPathComponent($0)}
-        
-        var urlRequest = URLRequest(url: finalUrl)
-        urlRequest.httpMethod = method
-
-        return urlRequest
-    }
-}
-
 protocol Model: Codable { }
 
 class Network: NetworkUseCase {

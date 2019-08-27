@@ -55,8 +55,12 @@ class GistApiController: NSObject, ApiController {
     }
 
     func gistFile() {
+        guard  let baseUrl = Constant.baseURL else {
+            self.onFailure?(.dataError, nil)
+            return
+        }
 
-        let urlRequest = Request(path: Constant.QueryType.gists.rawValue, parameters: [Constant.fileId])
+        let urlRequest = Request(baseUrl, path: Constant.QueryType.gists.rawValue, parameters: [Constant.fileId])
         Network.shared.send(urlRequest) { (result: Result<GistMain, Error>) in
             switch result {
             case .success(let gistMain):

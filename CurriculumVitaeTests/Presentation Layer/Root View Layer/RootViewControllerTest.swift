@@ -34,8 +34,8 @@ final class RootViewControllerTest: QuickSpec {
                     self.server.respondToGists().respondToGistFile().start()
                     viewController?.viewModel = RootViewModel(GistApiController())
                     viewController?.preloadView()
-                    let (wnd, tearDown) = (viewController?.appearInWindowTearDown())!
-                    defer { tearDown() }
+                    let (_, tearDown) = (viewController?.appearInWindowTearDown())!
+                    do { tearDown() }
                 }
 
                 afterEach {
@@ -67,17 +67,20 @@ final class RootViewControllerTest: QuickSpec {
 
                     }
                 }
-                it("should perform right segue when technical knowledge is selected") {
-                    let indexPath = IndexPath(row: 0, section: 1)
-                    viewController?.tableView((viewController?.rootTableView!)!, didSelectRowAt: indexPath)
-
-                    let segue = SegueHelper.segues(ofViewController: viewController!)
-                    expect(segue.contains("MoveToTechnical")).toEventually(beTrue())
-                    expect(segue.count).to(equal(2))
-
-                    let sender = viewController?.shouldPerformSegue(withIdentifier: "MoveToTechnical", sender: nil)
-                    expect(sender).toEventually(beTrue())
-                }
+//                it("should perform right segue when technical knowledge is selected") {
+//                    let indexPath = IndexPath(row: 0, section: 1)
+//                    viewController?.tableView((viewController?.rootTableView!)!, didSelectRowAt: indexPath)
+//                    if let technical = viewController?.viewModel.curriculamVitae.value?.technicalKnowledge{
+//                        expect(technical.configurationManagement).toEventually(equal(""))
+//                    }
+//
+//                    let segue = SegueHelper.segues(ofViewController: viewController!)
+//                    expect(segue.contains("MoveToTechnical")).toEventually(beTrue())
+//                    expect(segue.count).to(equal(2))
+//
+//                    let sender = viewController?.shouldPerformSegue(withIdentifier: "MoveToTechnical", sender: nil)
+//                    expect(sender).toEventually(beTrue())
+//                }
             }
         }
     }

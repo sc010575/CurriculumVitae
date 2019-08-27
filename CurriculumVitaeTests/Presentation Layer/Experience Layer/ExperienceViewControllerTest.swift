@@ -19,9 +19,9 @@ final class ExperienceViewControllerTest: QuickSpec {
             context("When ExperienceViewController is launched ") {
                 beforeEach {
                     viewController = storyboard.instantiateViewController(withIdentifier: "ExperienceViewController") as? ExperienceViewController
-                    let result1 = Result(company: "Company 1", icon: "A Icon", startDate: "2018-10-03", endDate: "", overview: "A good job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
+                    let result1 = Resultdata(company: "Company 1", icon: "A Icon", startDate: "2018-10-03", endDate: "", overview: "A good job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
 
-                    let result2 = Result(company: "Company 2", icon: "A new Icon", startDate: "2016-10-03", endDate: "2018-09-03", overview: "A good job", title: "Developer", jobType: "Permanent", responsibility: ["One", "Two", "Three"])
+                    let result2 = Resultdata(company: "Company 2", icon: "A new Icon", startDate: "2016-10-03", endDate: "2018-09-03", overview: "A good job", title: "Developer", jobType: "Permanent", responsibility: ["One", "Two", "Three"])
 
                     let technicals = [result1, result2]
                     viewController?.viewModel = ExperienceViewModel(technicals)

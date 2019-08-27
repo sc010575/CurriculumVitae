@@ -19,7 +19,7 @@ final class ExperienceDetailsViewControllerTest: QuickSpec {
             context("When ExperienceDetailsViewController is launched ") {
                 beforeEach {
                     viewController = storyboard.instantiateViewController(withIdentifier: "ExperienceDetailsViewController") as? ExperienceDetailsViewController
-                    let result = Result(company: "Company 1", icon: "A Icon", startDate: "01-02-2001", endDate: "", overview: "A goo job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
+                    let result = Resultdata(company: "Company 1", icon: "A Icon", startDate: "01-02-2001", endDate: "", overview: "A goo job", title: "Engineer", jobType: "Contract", responsibility: ["One", "Two"])
 
                     viewController?.experience = result
                     viewController?.preloadView()

@@ -15,10 +15,13 @@ enum ConnectionType {
     case offline
 }
 
-
+enum ConnectionChangeEvent {
+    case reEstablished
+    case other
+}
 
 protocol ConnectivityListener: class {
-    func ConnectivityStatusDidChanged()
+    func ConnectivityStatusDidChanged(_ connectionChangeEvent:ConnectionChangeEvent)
 }
 
 
@@ -62,25 +65,6 @@ class ConnectivityHandler: ErrorTrigger {
     }
 
     func startNotifier() {
-//        reachability?.whenReachable = { reachability in
-//            if reachability.connection == .wifi {
-//                print("Reachable via WiFi")
-//            } else {
-//                print("Reachable via Cellular")
-//            }
-//
-//            self.listeners.forEach {
-//                $0.ConnectivityStatusDidChanged()
-//            }
-//        }
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .spellOut
-        let a = [10, 110, 1110]
-        a.forEach {
-            let b =  formatter.string(from: NSNumber(value: $0))?.components(separatedBy: " ")
-            Log.verbose("b is \(b ?? [])")
-        }
-        
         reachability?.whenUnreachable = { _ in
             self.displayErrorMessage(error: ErrorMessage.fallbackLostConnectionError)
             self.previousConnectionType = .offline
@@ -101,10 +85,9 @@ class ConnectivityHandler: ErrorTrigger {
         if currentConnecType != previousConnectionType {
             previousConnectionType = currentConnecType
             self.listeners.forEach {
-                $0.ConnectivityStatusDidChanged()
+                $0.ConnectivityStatusDidChanged(.reEstablished)
             }
         }
-
     }
 }
 

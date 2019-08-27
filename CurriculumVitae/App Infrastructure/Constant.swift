@@ -17,7 +17,7 @@ struct Constant {
     }
     
     static let fileId = "feb733f8c6d6c38b9db4208fb7791567"
-    static let testFileUrl = "http://localhost:8088/sc010575/feb733f8c6d6c38b9db4208fb7791567"
+    static let testFileUrl = "http://localhost:8088/gists/feb733f8c6d6c38b9db4208fb7791567/CurriculumVitae"
     
     static var baseURL: URL? {
         
